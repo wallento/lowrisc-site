@@ -1,0 +1,1415 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>lowRISC</title>
+    <link>http://www.lowrisc.org/</link>
+    <description>Recent content on lowRISC</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 16 May 2016 12:00:00 +0000</lastBuildDate>
+    <atom:link href="http://www.lowrisc.org/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Apply now to work with lowRISC in Google Summer of Code</title>
+      <link>http://www.lowrisc.org/blog/2016/03/apply-now-to-work-with-lowrisc-in-google-summer-of-code</link>
+      <pubDate>Sun, 20 Mar 2016 20:35:57 +0000</pubDate>
+      
+      <guid>http://www.lowrisc.org/blog/2016/03/apply-now-to-work-with-lowrisc-in-google-summer-of-code</guid>
+      <description>&lt;p&gt;We are very grateful to have been selected to take part as a mentoring
+organisation in the &lt;a href=&#34;https://summerofcode.withgoogle.com/&#34;&gt;Google Summer of
+Code&lt;/a&gt; for the second year running. As
+with last year, we&amp;rsquo;re working with a number of friends from across the wider
+open source hardware community to act as an umbrella for a range of
+hardware-related projects. If you are a student who would like to be paid to
+work on open source during the summer, then take a look at &lt;a href=&#34;http://www.lowrisc.org/docs/gsoc-2016-ideas/&#34;&gt;the lowRISC ideas
+list&lt;/a&gt; and
+&lt;a href=&#34;https://summerofcode.withgoogle.com/organizations/6271463900315648/&#34;&gt;apply&lt;/a&gt;.
+As was pointed out on the Google Open Source Program&amp;rsquo;s blog, there is a &lt;a href=&#34;http://google-opensource.blogspot.co.uk/2016/03/something-different-code-up-hardware-in.html&#34;&gt;good
+showing from hardware-related projects in GSoC this
+year&lt;/a&gt;.
+The deadline for applications is this coming Friday, 25th March at 7pm GMT.&lt;/p&gt;
+
+&lt;p&gt;We welcome ideas of your own creation, but the &lt;a href=&#34;http://www.lowrisc.org/docs/gsoc-2016-ideas/&#34;&gt;ideas we&amp;rsquo;ve suggested this
+year&lt;/a&gt; include:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;A trace debug analysis tool (ideally using TypeScript and Electron)&lt;/li&gt;
+&lt;li&gt;Improving device-tree support for the Linux RISC-V port&lt;/li&gt;
+&lt;li&gt;Various ideas related to the &lt;a href=&#34;http://www.clifford.at/yosys/&#34;&gt;Yosys&lt;/a&gt;
+open-source synthesis tool.&lt;/li&gt;
+&lt;li&gt;Porting a teaching OS such as xv6 or XINU to the lowRISC platform&lt;/li&gt;
+&lt;li&gt;Porting CMSIS-DSP to PULPino&lt;/li&gt;
+&lt;li&gt;Doom on PULPino&lt;/li&gt;
+&lt;li&gt;Porting the Arduino libraries to PULPino&lt;/li&gt;
+&lt;li&gt;Integrating additional open-source IP for lowRISC on FPGA&lt;/li&gt;
+&lt;li&gt;Implementing a Trusted Execution Environment&lt;/li&gt;
+&lt;li&gt;Porting musl libc to RISC-V&lt;/li&gt;
+&lt;li&gt;A Generic hardware/software interface for software-defined radio&lt;/li&gt;
+&lt;li&gt;A SPIR-V frontend for Nyuzi&lt;/li&gt;
+&lt;li&gt;Porting an OS kernel to Nyuzi&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Third RISC-V Workshop: Day Two</title>
+      <link>http://www.lowrisc.org/blog/2016/01/third-risc-v-workshop-day-two</link>
+      <pubDate>Wed, 06 Jan 2016 17:05:57 +0000</pubDate>
+      
+      <guid>http://www.lowrisc.org/blog/2016/01/third-risc-v-workshop-day-two</guid>
+      <description>
+
+&lt;p&gt;Today is the second day of the &lt;a href=&#34;http://riscv.org/workshop-jan2016.html&#34;&gt;third RISC-V
+workshop&lt;/a&gt;. Again, I&amp;rsquo;ll be keeping a
+semi-live blog of talks and announcements throughout the day. See
+&lt;a href=&#34;http://www.lowrisc.org/blog/2016/01/third-risc-v-workshop-day-one&#34;&gt;here&lt;/a&gt; for
+notes from the first day.&lt;/p&gt;
+
+&lt;h2 id=&#34;risc-v-asic-and-fpga-implementations-richard-herveille:541250aa31d27f4326ef7f42e9e3ae89&#34;&gt;RISC-V ASIC and FPGA implementations: Richard Herveille&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Look for freedom of design. Want to free migrate between FPGAs, structured
+ASICs, standard cell ASICs&lt;/li&gt;
+&lt;li&gt;Want to make it easier to migrate FPGAs to ASICs for advantages in price,
+performance, power, IP protection.&lt;/li&gt;
+&lt;li&gt;Roa Logic&amp;rsquo;s RV32I/64 implementations are called RV11 and RV22. RV11 is
+in-order, single-issue, single thread. RV22 is in-order, dual-issue and dual
+thread.&lt;/li&gt;
+&lt;li&gt;Implement a &amp;lsquo;folded&amp;rsquo; optimizing 5-stage pipeline, where some classic RISC
+stages are folded together for performance improvement. e.g. the instruction
+decode stage decides if the instruction sequence can be optimized.&lt;/li&gt;
+&lt;li&gt;Ported a debug unit for or1k from OpenCores&lt;/li&gt;
+&lt;li&gt;Mostly target the eASIC nextreme platform. Start with an existing FPGA
+design, then transfer.&lt;/li&gt;
+&lt;li&gt;Achieved Fmax of 649MHz (32-bit core) on a nextreme-3, vs 114MHz on the customer&amp;rsquo;s
+current CYCLONE-V. Achieved a 70% power reduction.&lt;/li&gt;
+&lt;li&gt;Next steps are to improve resource utilization, increase offering of
+extensions, and add multi-threading and multi-issue.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;lowrisc-plans-for-risc-v-in-2016-alex-bradbury:541250aa31d27f4326ef7f42e9e3ae89&#34;&gt;lowRISC: plans for RISC-V in 2016: Alex Bradbury&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Find my slides
+&lt;a href=&#34;https://speakerdeck.com/asb/lowrisc-plans-for-risc-v-in-2016&#34;&gt;here&lt;/a&gt;.
+Apologies for not live-blogging my own talk.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;a-32-bit-100mhz-risc-v-microcontroller-with-10-bit-sar-adc-in-130nm-gp-elkim-roa:541250aa31d27f4326ef7f42e9e3ae89&#34;&gt;A 32-bit 100MHz RISC-V microcontroller with 10-bit SAR ADC in 130nm GP: Elkim Roa&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Current goal: a low-footprint RISC-V microcontroller like EFM32 or SAMD11
+with USB low-speed PHY on-chip.&lt;/li&gt;
+&lt;li&gt;Looked at picorv32 and vscale, but ultimately implemented their own
+implementation. Also adding in a 10-bit SAR ADC, DAC, PLL, GPIO.&lt;/li&gt;
+&lt;li&gt;Implement RV32IM using a 3-stage pipeline. IRQ handling is adapted from the
+picorv32 timer.&lt;/li&gt;
+&lt;li&gt;Provides AXI-4 lite and an APB bridge.&lt;/li&gt;
+&lt;li&gt;SAR ADC intends to be fully synthesizable, 10-bit 10MHz.&lt;/li&gt;
+&lt;li&gt;The chip was taped out in October 2015 on 130nm TSMC GP. The core+interfaces
+area was 800um x 480um.&lt;/li&gt;
+&lt;li&gt;Undertook a large effort on verification, implemented verification
+testbenches for AXI-4 and APB peripheral functionality. Would like to partner
+to get access to proven VIP.&lt;/li&gt;
+&lt;li&gt;Future work to be done on a USB PHY low-speed interface, DMA channels,
+watchdog timer, eNVM 1-poly ROM&lt;/li&gt;
+&lt;li&gt;Question: where and when can I download it? Soon! Still cleaning it up.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;soc-for-satelline-navigation-unit-based-on-the-risc-v-single-core-rocket-chip-sergei-khabarov:541250aa31d27f4326ef7f42e9e3ae89&#34;&gt;SoC for satelline navigation unit based on the RISC-V single-core Rocket chip: Sergei Khabarov&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Currently have an RF-mezzanine card for FPGA prototypes, and
+silicon-verified GNSS IP and ASIC development board with a LEON3 CPU inside.&lt;/li&gt;
+&lt;li&gt;On the software, have universal receive firmware and plug-and-play support
+for different targets. Plus a host application for data analysis. See
+gnss-snsor.com.&lt;/li&gt;
+&lt;li&gt;Now transitioning from the previous 180nm ASIC to a new 90nm chip with a
+RISC-V core. The target frequency is 300MHz.&lt;/li&gt;
+&lt;li&gt;The new SoC design aims to take the best ideas of the GPL-licensed grlib
+library (Gaisler Research) and will be written in VHDL.&lt;/li&gt;
+&lt;li&gt;Current code can be found &lt;a href=&#34;https://github.com/sergeykhbr/riscv_vhdl&#34;&gt;here&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;Plug and play approach taken from grlib to help quickly assemble a complex
+SoC design. Device ID, vendor ID, address and interrupt configuration,
+cacheability etc etc routed in sideband signals accessible via a dedicated
+slave device on a system bus.&lt;/li&gt;
+&lt;li&gt;Some memory access optimizations have been implemented to allow access to
+AXI peripherals in one clock cycle.&lt;/li&gt;
+&lt;li&gt;Implemented (or implementing?) the multi-core debug protocol, potentially
+supported by Trace32 (Lauterbach).&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;risc-v-photonic-processor-chen-sun:541250aa31d27f4326ef7f42e9e3ae89&#34;&gt;RISC-V photonic processor: Chen Sun&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Process scaling has helped massively for data transfer within a chip, but
+we&amp;rsquo;ve had little improvement for moving data off-chip.&lt;/li&gt;
+&lt;li&gt;The I/O wall involves being both power and pin limited. Silicon photonics
+may help overcome this.&lt;/li&gt;
+&lt;li&gt;Started by tring to provide DRAM connected by photonics (as part of the
+DARPA POEM project).&lt;/li&gt;
+&lt;li&gt;What about the foundry? Do it without a foundry. How to connect electronics
+and photonics? Put them on the same chip. Where are you going to get a
+processor? RISC-V!&lt;/li&gt;
+&lt;li&gt;They produced it and it was published in Nature last month. Dual-core
+1.65GHz RISC-V. Manufactured in a commercial SOI process.&lt;/li&gt;
+&lt;li&gt;Build a waveguide with planar silicon processing. Silicon is the high-index
+core. Oxides form the low-index cladding.&lt;/li&gt;
+&lt;li&gt;Transmitter is driven by a CMOS logic inverter. 5Gb/s data rate at 30fj/b.&lt;/li&gt;
+&lt;li&gt;Issue with ring resonators is massive variation based on process and
+temperature variation. Need to stabilise this some-how. Add thermal tuning.&lt;/li&gt;
+&lt;li&gt;To demonstrate the optical memory system, had a second chip emulating a DRAM
+controller.&lt;/li&gt;
+&lt;li&gt;We proposed an architecture, built it, and got performance competitive to
+our predictions!&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;untethering-the-risc-v-rocket-chip-wei-song:541250aa31d27f4326ef7f42e9e3ae89&#34;&gt;Untethering the RISC-V Rocket Chip: Wei Song&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Rocket is an open-source SoC generator from Berkeley. The base Rocket core
+is a &lt;sup&gt;5&lt;/sup&gt;&amp;frasl;&lt;sub&gt;6&lt;/sub&gt; stage single-issue in-order processor.&lt;/li&gt;
+&lt;li&gt;Previously an host-target interface was connected to the L2 bus which
+communicates with an ARM core on the Zynq to provide peripherals.&lt;/li&gt;
+&lt;li&gt;The untethered Rocket chip adds a separate I/O bus. Currently uses Xilinx IP
+for peripherals. First stage bootloader is on FPGA block RAM, second stage
+bootloader is loaded from SD. I/O read and write are totally uncached.&lt;/li&gt;
+&lt;li&gt;The top-level (including I/O devices) is all in System Verilog. There is a
+separate &amp;lsquo;Chisel island&amp;rsquo; containing the Rocket interface.&lt;/li&gt;
+&lt;li&gt;The I/O and memory maps can be configured by CSRs.&lt;/li&gt;
+&lt;li&gt;The first-stage bootloader copies the second stage to DRAM, performing an
+uncached copy. It then remaps the DRAM to memory address 0, resets Rocket and
+starts the second stage. The second stage uses a version of the Berkeley
+bootloader. It starts multi-core, VM support, then loads and boots RISC-V
+Linux in a virtual address space.&lt;/li&gt;
+&lt;li&gt;Currently the second stage bootloader stays resident to handle HTIF
+requests.&lt;/li&gt;
+&lt;li&gt;Our code release contains a very detailed tutorial. Key features include
+support for the Nexys4 as well as the more expensive KC705. You can also use
+Verilator for simulation and a free WebPACK Vivado license.&lt;/li&gt;
+&lt;li&gt;The code release includes a rewritten TileLink/NASTI interface, DDR2/3
+controller, SD, UART.&lt;/li&gt;
+&lt;li&gt;Future work: re-integrate tagged memory, remove HTIF from Linux kernel (help
+wanted), interrupt controller, trace debugger (Stefan Wallentowitz),
+run-control debug (SiFive), platform spec.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;mit-s-riscy-expedition-andy-wright:541250aa31d27f4326ef7f42e9e3ae89&#34;&gt;MIT&amp;rsquo;s RISCY expedition: Andy Wright&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;MIT implemented an IMAFD 64-bit RISC-V processor in Bluespec System Verilog.
+It supports machine, supervisor, and user modes, boots Linux, and has been
+tandem-verified with Spike.&lt;/li&gt;
+&lt;li&gt;Want to work on formal specification of the ISA, formally verified processor
+implementations, memory consistency models, accelerators, microarchitecture
+exploration, VLSI implementations using a standard ASIC flow.&lt;/li&gt;
+&lt;li&gt;Philosophy: get a working processor first, figure out why it&amp;rsquo;s slow, and
+make it faster without breaking it.&lt;/li&gt;
+&lt;li&gt;Moving to work on formal verification, which requests a formal specification
+for RISC-V. Lots of questions to be answered, e.g. whether referenced bits in
+page table entries should be set for speculatively accessed pages.&lt;/li&gt;
+&lt;li&gt;A single instruction can result in up to 13 effective memory accesses - how
+do these interact with each other, and how do they influence the memory model?&lt;/li&gt;
+&lt;li&gt;Want simple operational definitions where legal behaviours can be observable
+on a simple abstract machine consisting of cores and a shared monolithic
+memory.&lt;/li&gt;
+&lt;li&gt;Looked at defining WMM, a new easy-to-specify weak consistency model.&lt;/li&gt;
+&lt;li&gt;Propose there should be a new instruction similar to sfence.vm, but going in
+the opposite direction.&lt;/li&gt;
+&lt;li&gt;See also &lt;a href=&#34;http://csg.csail.mit.edu/riscy-e/&#34;&gt;their website&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;Question: will it be open source? Concerned currently because some aspects
+of the design are used as challenges for student projects and releasing it
+could compromise the projects.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;pydgin-for-risc-v-a-fast-and-productive-instruction-set-simulator-berkin-ilbeyi:541250aa31d27f4326ef7f42e9e3ae89&#34;&gt;Pydgin for RISC-V, a fast and productive instruction-set simulator: Berkin Ilbeyi&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Simple interpreted instruction set simulators get 1-10MIPS of performance.
+Typical dynamic binary translation may achieve 100s of MIPS, with QEMU
+achieving up to 1000 MIPS.&lt;/li&gt;
+&lt;li&gt;Another aspect worthy of consideration is productivity when working with the
+simulator, for instance when looking to extend it to explore new hardware
+features. Can you achieve high developer productivity and runtime performance?&lt;/li&gt;
+&lt;li&gt;Observe there are similar productivity-performance challenges for building
+high performance language runtimes as for simulators. e.g. the PyPy project.&lt;/li&gt;
+&lt;li&gt;Pydgin uses PyPy&amp;rsquo;s RPython framework.&lt;/li&gt;
+&lt;li&gt;Pydgin describes its own architectural description language (really a Python
+DSL).&lt;/li&gt;
+&lt;li&gt;Pydgin running on a standard Python interpreter gives ~100KIPS. But when
+going through RPython this gives 10MIPS. When targeting the RPython JIT,
+adding extra RPython JIT hints are added achieved up to a 23x performance
+improvement over no annotations.&lt;/li&gt;
+&lt;li&gt;Performs 2-3x better than Spike for many workloads. Spike caches decoded
+instructions and uses PC-indexed dispatch to improve performance.&lt;/li&gt;
+&lt;li&gt;Achieved a 100MIPS+ RISC-V port after 9 days of development.&lt;/li&gt;
+&lt;li&gt;Pydgin is used in the Cornell research group to gain statistics for
+software-defined regions, experimentations with data-structure specialisation,
+control and memory divergence for SIMD, and more.&lt;/li&gt;
+&lt;li&gt;Pydgin is &lt;a href=&#34;https://github.com/cornell-brg/pydgin&#34;&gt;online at Github&lt;/a&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;orca-fpga-optimized-risc-v-soft-processors-guy-lemieux:541250aa31d27f4326ef7f42e9e3ae89&#34;&gt;ORCA, FPGA-optimized RISC-V soft processors: Guy Lemieux&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;ORCA is completely open-source. See it &lt;a href=&#34;https://github.com/cornell-brg/pydgin&#34;&gt;at
+Github&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;Initially targeted the Lattice iCE40 (3.5kLUTs, under $5 in low quantities).&lt;/li&gt;
+&lt;li&gt;RV32M implemented in 2kLUTs at around 20MHz on the iCE40.&lt;/li&gt;
+&lt;li&gt;ORCA is highly parameterized, ideally suitable for FPGAs, portable across
+FPGA vendors, and BSD-licensed.&lt;/li&gt;
+&lt;li&gt;Achieved 244MHz, 212MIPS on an Altera Stratix-V. Lots of room for further
+improvements.&lt;/li&gt;
+&lt;li&gt;Clock speed is close to matching the picorv32 clock speed, but with higher
+DMIPS/MHz.&lt;/li&gt;
+&lt;li&gt;Found 64-bit vs 32-bit counters added a lot of area.&lt;/li&gt;
+&lt;li&gt;A good FPGA implementation often leads to a good ASIC implementation, but a
+good ASIC implementation often leads to a poor FPGA implementation.&lt;/li&gt;
+&lt;li&gt;Use dual-ported block RAMS on the FPGA for the register file.&lt;/li&gt;
+&lt;li&gt;Observe that reduced register count in RV32E makes no difference for FPGAs.
+Divide is very expensive.&lt;/li&gt;
+&lt;li&gt;Beware when writing software, a shift could be as slow as 1b/cycle.&lt;/li&gt;
+&lt;li&gt;The privileged architecture spec contains too many CSRs and the 64bit
+counters are too big, putting pressure on multiplexers. For FPGAs, perhaps
+defined small/med/full versions.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;pulpino-a-small-single-core-risc-v-soc-andreas-traber:541250aa31d27f4326ef7f42e9e3ae89&#34;&gt;PULPino, a small single-core RISC-V SoC: Andreas Traber&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;PULP and PULPino developed at ETH Zurich and University of Bologna with many
+partners.&lt;/li&gt;
+&lt;li&gt;Develop an ultra low power processor for computing IoT. Explot parallelism
+using multiple small simple cores organised in clusters.&lt;/li&gt;
+&lt;li&gt;Share memory within the cluster.&lt;/li&gt;
+&lt;li&gt;Support near-threshold operation for very low power.&lt;/li&gt;
+&lt;li&gt;PULP has been taped out over a dozen times across multiple process
+technologies, down to 28nm.&lt;/li&gt;
+&lt;li&gt;PULP has a large number of IPs. To start with, open source PULPino as a
+starting point.&lt;/li&gt;
+&lt;li&gt;PULPino is a microcontroller-style platform. No caches, no memory hierarchy,
+no DMA. It re-uses IP from the PULP project and will be taped out in 65nm UMC.&lt;/li&gt;
+&lt;li&gt;The boot ROM loads a program from SPI flash.&lt;/li&gt;
+&lt;li&gt;Motivated to switch to RISC-V due to more modern design (no set flags, no
+delay slot), compressed instructions, easily extensible.&lt;/li&gt;
+&lt;li&gt;Looking to extend RISC-V with non-standard extensions for hardware loops,
+post-increment load+store, multiply-accumulate, ALU extensions (min, max
+absolute value).&lt;/li&gt;
+&lt;li&gt;RI5CY core has full support for RV32I, implements just the mul from RV32M.
+It has a 4 stage pipeline.&lt;/li&gt;
+&lt;li&gt;Performed a comparison based on published Cortex M4 numbers. RI5CY is a
+little faster and a little smaller.&lt;/li&gt;
+&lt;li&gt;The RI5CY core itself is just 7% of the area of a PULPino SoC (assuming
+32KiB instruction and data RAM).&lt;/li&gt;
+&lt;li&gt;Open source release will follow shortly, including a FreeRTOS port. Using
+the Solderpad license. Just awaiting final approval from the University
+(expected by the end of the month).&lt;/li&gt;
+&lt;li&gt;Want to port PULPino to IP-XACT. Also want to add floating point support,
+branch prediction, and evaluate further non-standard ISA extensions.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;the-berkeley-out-of-order-machine-boom-christopher-celio:541250aa31d27f4326ef7f42e9e3ae89&#34;&gt;The Berkeley Out-of-Order Machine (BOOM): Christopher Celio&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;An out-of-order core. It&amp;rsquo;s synthesizable, parameterizable, and open-source.&lt;/li&gt;
+&lt;li&gt;Out-of-order is great for tolerating variable latencies, finding
+instruction-level parallelism, and working with poor compilers or lazily
+written code.&lt;/li&gt;
+&lt;li&gt;Downsides are it&amp;rsquo;s more complex and potentially expensive in area and power.&lt;/li&gt;
+&lt;li&gt;Should work as an interesting baseline for micro-architecture research. Also
+enables research that need and out of order core (e.g. on memory systems,
+accelerators, VLSI methodologies).&lt;/li&gt;
+&lt;li&gt;BOOM implements IMAFD and the RV64G+ privileged spec.&lt;/li&gt;
+&lt;li&gt;The RISC-V ISA is easy to implement. Relaxed memory model, accrued FP
+exception flags, no integer side-effects (e.g. condition codes), no cmov or
+predication, no implicit register specifiers, rs1+rs2+rs3+rd are always in the
+same space allowing decode and rename to proceed in parallel.&lt;/li&gt;
+&lt;li&gt;As Rocket-chip gets better, so does BOOM.&lt;/li&gt;
+&lt;li&gt;The host-target interface is being removed from rocket-chip to provide an
+untethered system.&lt;/li&gt;
+&lt;li&gt;BOOM has a unified physical register file (floating point and integer).&lt;/li&gt;
+&lt;li&gt;Masses of parameters can be tweaked.&lt;/li&gt;
+&lt;li&gt;2-wide BOOM with 16KiB L1 caches 1.2mm2 in TSMC 45nm. Can clock at 1.5GHz
+for two-wide.&lt;/li&gt;
+&lt;li&gt;Currently designed for single-cycle SRAM access as the critical path.&lt;/li&gt;
+&lt;li&gt;Planning on a tapeout later this year.&lt;/li&gt;
+&lt;li&gt;Achieve 50MHz on an FPGA where the bottleneck is the FPGA tools can&amp;rsquo;t
+register-rename the FPU.&lt;/li&gt;
+&lt;li&gt;BOOM is 9kloc, plus 11kloc from Rocket.&lt;/li&gt;
+&lt;li&gt;9% CoreMarks/MHz for ARM Cortex-A9 with similar architectural parameters and
+smaller (but lacking the NEON unit). Power is also similar based on public
+numbers.&lt;/li&gt;
+&lt;li&gt;Don&amp;rsquo;t yet have a SPEC score. Need more DRAM on the FPGA and DRAM emulation.
+With a cluster of FPGAs, this should only take about a day to run.&lt;/li&gt;
+&lt;li&gt;BOOM-chip is currently a branch of rocket-chip. See the slides for how to
+get going.&lt;/li&gt;
+&lt;li&gt;Currently test/verify using riscv-tests, coremark, spec, and the
+riscv-torture tool.&lt;/li&gt;
+&lt;li&gt;riscv-torture, a randomised test generator was open-sourced yesterday. If it
+finds a bug, it will minimise the program for you.&lt;/li&gt;
+&lt;li&gt;A design document is a work in progress up on github.com/ccelio (doesn&amp;rsquo;t
+seem to be published yet?)&lt;/li&gt;
+&lt;li&gt;Want to grow a community of &amp;ldquo;baby BOOMers&amp;rdquo; :)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;bluespec-s-risc-v-factory-rishiyur-nikhil:541250aa31d27f4326ef7f42e9e3ae89&#34;&gt;Bluespec&amp;rsquo;s &amp;ldquo;RISC-V Factory&amp;rdquo;: Rishiyur Nikhil&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Bluespec&amp;rsquo;s &amp;lsquo;RISC-V Factory&amp;rsquo; is aimed at organisations who want to create
+their own RISC-V based CPUs or SoCs without the usual learning curve, startup
+costs, and ownership costs.&lt;/li&gt;
+&lt;li&gt;Currently working with Draper on the DOVER project we&amp;rsquo;ll be hearing about in
+the next talk.&lt;/li&gt;
+&lt;li&gt;The Flute RISC-V CPU has interfaces for direct GDB control, an elastic
+(latency-insensitive) pipeline, hooks for optional tagged data.&lt;/li&gt;
+&lt;li&gt;Have components such as interconnect, memory controller, DMA engine,
+devices. Working on flash for booting and Ethernet.&lt;/li&gt;
+&lt;li&gt;Provide a complete development and verification environment.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;dover-a-metadata-extended-risc-v-andre-dehon:541250aa31d27f4326ef7f42e9e3ae89&#34;&gt;DOVER, a metadata-extended RISC-V: Andre DeHon&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Current computer systems are insecure, and the processor architecture
+contributes by blinding running code and making the secure and safe thing
+expensive.&lt;/li&gt;
+&lt;li&gt;Add software defined metadata processing as implemented in PUMP.&lt;/li&gt;
+&lt;li&gt;Give each word a programmable tag. This is indivisible from a word and its
+interpretation is programmable.&lt;/li&gt;
+&lt;li&gt;PUMP is a function from (Opcode, PCtag, Instrtag, RS1tag, RS2tag, MRtag) to
+(Allowed?, PCtag, Resulttag).&lt;/li&gt;
+&lt;li&gt;Possible policies include access control, types, fine-grained instruction
+permissions, memory safety, control flow integrity, taint tracking and
+information flow control.&lt;/li&gt;
+&lt;li&gt;Rules are installed by software on PUMP misses. This demands metadata
+structures be immutable.&lt;/li&gt;
+&lt;li&gt;A metadata tag can be a pointer, meaning it can point to a data structure of
+arbitrary size.&lt;/li&gt;
+&lt;li&gt;Can support composite policies. i.e. no limit of only one policy at once.&lt;/li&gt;
+&lt;li&gt;There are no instructions to read or write metadata, i.e. no set-tag or read
+tag. All tag manipulation is done through the PUMP.&lt;/li&gt;
+&lt;li&gt;In RISC-V use PUMP CSRs for rule inputs and outputs.&lt;/li&gt;
+&lt;li&gt;Compared to lowRISC: lowRISC has a limited number of tag bits, tags are
+accessible to user code. Good for self-protection safety but argue it&amp;rsquo;s not
+adequate to enforce policies against malicious code (i.e. code actively trying
+to circumvent protection).&lt;/li&gt;
+&lt;li&gt;Compare to Oracle M7. M7 has a limited number of colors and a fixed policy.&lt;/li&gt;
+&lt;li&gt;Have some global tags and rules so they have the same meaning across
+different processes.&lt;/li&gt;
+&lt;li&gt;Idiosyncrasies about RISC-V: one instruction uses RS3, sparse opcode space
+increases table size, multiple instructions per machine word (policies want
+tagged instructions)&lt;/li&gt;
+&lt;li&gt;Draper plans to make available Bluespec RISC-V and metadata changes, PUMP,
+set of basic micropolicies, runtime support and tools all under open source
+licenses.&lt;/li&gt;
+&lt;li&gt;Building a consortium around Dover, an &amp;ldquo;Inherently Secure Processing Hive&amp;rdquo;.&lt;/li&gt;
+&lt;li&gt;Question: what is the overhead? Don&amp;rsquo;t have figures yet for RISC-V. From
+previous work, have 10% area overhead and twice the area, 60% energy overhead.&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Third RISC-V Workshop: Day One</title>
+      <link>http://www.lowrisc.org/blog/2016/01/third-risc-v-workshop-day-one</link>
+      <pubDate>Tue, 05 Jan 2016 17:35:57 +0000</pubDate>
+      
+      <guid>http://www.lowrisc.org/blog/2016/01/third-risc-v-workshop-day-one</guid>
+      <description>
+
+&lt;p&gt;The &lt;a href=&#34;http://riscv.org/workshop-jan2016.html&#34;&gt;third RISC-V workshop&lt;/a&gt; is going
+on today and tomorrow at the Oracle Conference Center, California. I&amp;rsquo;ll be
+keeping a semi-live blog of talks and announcements throughout the day. See
+&lt;a href=&#34;http://www.lowrisc.org/blog/2016/01/third-risc-v-workshop-day-two&#34;&gt;here&lt;/a&gt; for
+notes from the second day.&lt;/p&gt;
+
+&lt;h2 id=&#34;introductions-and-risc-v-foundation-overview-rick-o-connor:404bdd89395af7de00a88d5e9af98f5d&#34;&gt;Introductions and RISC-V Foundation Overview: Rick O&amp;rsquo;Connor&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Save the date, the 4th RISC-V workshop will be July 12th-13th at the MIT
+CSAIL/Stata Center.&lt;/li&gt;
+&lt;li&gt;In August 2015, articles of incorporation were filed to create a non-profit
+RISC-V Foundation to govern the ISA.&lt;/li&gt;
+&lt;li&gt;RISC-V Foundation mission statement: The RISC-V Foundation is a non-profit
+consortium chartered to standardize, protect, and promote the free and open
+RISC-V instruction set architecture together with its hardware and software
+ecosystem for use in all computing devices.&lt;/li&gt;
+&lt;li&gt;The RISC-V ISA and related standards shall remain open and license-free to
+all parties.&lt;/li&gt;
+&lt;li&gt;The compatibility test suites shall always be publicly available as a source
+code download.&lt;/li&gt;
+&lt;li&gt;To protect the standard, only members (with commercial RISC-V products) of
+the Foundation in good standing can use &amp;ldquo;RISC-V&amp;rdquo; and associated trademarks,
+and only for devices that pass the tests in the open-source compatibility
+suites maintained by the Foundation.&lt;/li&gt;
+&lt;li&gt;Drafting a new license for the ISA &amp;lsquo;combining the best of BSD, GPL and so
+on&amp;rsquo;.&lt;/li&gt;
+&lt;li&gt;The Foundation will have a board of 7 directors elected by the members. All
+members of committees must be members of the RISC-V Foundation.&lt;/li&gt;
+&lt;li&gt;All details of the foundation are a work in progress. Feedback is welcome!&lt;/li&gt;
+&lt;li&gt;16 member companies so far. Bluespec, Draper, Google, Hewlett Packard Labs,
+Microsemi, Oracle, SiFive, antmicro, codasip, Gray Research, Lattice
+Semiconductor, lowRISC, ROA logic, Rumble Development, Syntacore, Technolution&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;risc-v-updates-krste-asanovic:404bdd89395af7de00a88d5e9af98f5d&#34;&gt;RISC-V Updates: Krste Asanovic&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;The 1.9 version of the compressed extension is on track to become frozen and
+become blessed as v2.0. Now is the time to speak up if you have any feedback
+or concerns!&lt;/li&gt;
+&lt;li&gt;Privileged architecture 1.7 was released in May 2015 and has received a lot
+of feedback. Hope to release an updated draft addressing feedback in the next
+month or two. Doubt it will really settle down before the summer, as it needs
+more OS and driver development against it.&lt;/li&gt;
+&lt;li&gt;&amp;lsquo;V&amp;rsquo; Vector Extension: not yet ready to release a draft for this workshop,
+but the RTL of the HWacha vector coprocessor has been open-sourced along with
+3 tech-reports.&lt;/li&gt;
+&lt;li&gt;Hwacha is NOT the V extensions. It&amp;rsquo;s a research project designed to push the
+limits of in-order decoupled data-parallel accelerators (e.g. GPUs). The
+microarchitecture does demonstrate some of the ideas that will appear in V.&lt;/li&gt;
+&lt;li&gt;Ongoing ISA research at UCB: virtual local store (VLS, Henry Cook&amp;rsquo;s 2009
+master&amp;rsquo;s thesis) and user-level DMA (copying data between DRAM and VLS
+directly).&lt;/li&gt;
+&lt;li&gt;New Berkeley open-source cores: BOOM out-of-order implementation and V-Scale
+(verilog implementation of Z-Scale).&lt;/li&gt;
+&lt;li&gt;RISC-V is being transitioned out of Berkeley. This involves upstreaming of
+tools and the RISC-V Foundation taking over the standards process.&lt;/li&gt;
+&lt;li&gt;SiFive has been founded by some of the lead RISC-V developers (Krste
+Asanovic, Yunsup Lee, Andrew Waterman). Sutter Hill Ventures have invested.&lt;/li&gt;
+&lt;li&gt;Most urgent outstanding issues: holes and ambiguities in the specification
+and the platform specification.&lt;/li&gt;
+&lt;li&gt;Holes in the spec: floating-point NaNs (resolved and updated), CSR
+read/write semantics (resolved, updated spec), memory model (far from
+resolved), Hypervisor support (no proposal). A formal spec of the whole ISA
+and memory model is desired.&lt;/li&gt;
+&lt;li&gt;Although RISC-V was designed in reusable layers, some concrete standards for
+hardware platforms are desirable e.g. memory maps, interrupt controller, power
+management. To what extent can platform specs be shared across
+microcontroller-class, application cores, and rack-scale designs?&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;risc-v-external-debug-aka-jtag-debugging-tim-newsome:404bdd89395af7de00a88d5e9af98f5d&#34;&gt;RISC-V External Debug (aka JTAG debugging): Tim Newsome&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Goals: a debug system that works for everybody with a working system done by
+July 1st 2016.&lt;/li&gt;
+&lt;li&gt;The specification will be submitted to the RISC-V Foundation and there are
+plans for an open source release of the debugger and implementations for
+Rocket and Z-Scale.&lt;/li&gt;
+&lt;li&gt;Status: the specification is mostly complete.&lt;/li&gt;
+&lt;li&gt;Features: (many, see the slides). Interested in tracing core execution to on
+or off-chip RAM and providing a framework to debug any component on the
+system, not just the RISC-V cores.&lt;/li&gt;
+&lt;li&gt;The debug transport module provides access to the system bus. It implements
+a message queue and optional authentication.&lt;/li&gt;
+&lt;li&gt;New CSRs will be added and exposed on the system bus.&lt;/li&gt;
+&lt;li&gt;The spec describes a small amount of debug memory (1KiB ROM) and 8-16 bytes
+of RAM. This memory is not cached and is shared between all cores.&lt;/li&gt;
+&lt;li&gt;Up to 4095 hardware breakpoints supported (but 4 is more typical). Each may
+support exact address match, address range match, exact data match, data range
+match, &amp;hellip;&lt;/li&gt;
+&lt;li&gt;The work-in-progress spec will be posted to the hw-dev RISC-V mailing list
+later today. Comments very welcome.&lt;/li&gt;
+&lt;li&gt;Question: how does this map to gdb&amp;rsquo;s capabilities? Are there things it can
+do but gdb can&amp;rsquo;t or vice-versa? It&amp;rsquo;s not a 1:1 match but should be a superset
+of what gdb can do.&lt;/li&gt;
+&lt;li&gt;Question: how does the tracing scale? Hasn&amp;rsquo;t be investigated yet.&lt;/li&gt;
+&lt;li&gt;Question: will support be integrated into the BOOM codebase? Answer: not
+currently planned.&lt;/li&gt;
+&lt;li&gt;Question: there&amp;rsquo;s a wide spectrum of functionality that different
+implementations could implement. Is there a discovery mechanism for the
+functionality that is supported? Yes.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;risc-v-in-axiom-michael-gielda:404bdd89395af7de00a88d5e9af98f5d&#34;&gt;RISC-V in Axiom: Michael Gielda&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Axiom is a fully open source 4K film camera design. It is an EU Horizon 2020
+project with multiple partners.&lt;/li&gt;
+&lt;li&gt;Aim of Axiom is to create an extensible open source platform that is also a
+desirable project in itself. The aim is to open up what is currently a fairly
+closed industry and lower barriers of entry to new players. There is an
+obvious parallel to the RISC-V and lowRISC projects.&lt;/li&gt;
+&lt;li&gt;Chose the largest Zynq FPGA that had zero-cost tool support to maximise the
+number of people who can hack on the design.&lt;/li&gt;
+&lt;li&gt;Using the Z-Scale as a soft-core for communication between the FPGA
+pre-processing board (Kintex-7) and the FPGA SoC main board with a dual-core
+Cortex-A9 (Zynq 7030).&lt;/li&gt;
+&lt;li&gt;Long-term goals are to ensure the design can be reused through
+parameterisation, and look at broadening adoption of the Chisel design
+methodology.&lt;/li&gt;
+&lt;li&gt;The Axiom Gamma project is almost half-way done. There will be an EU
+technical review in March at which point it should be working.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;emulating-future-hpc-soc-architectures-using-risc-v-farzad-fatollahi-fard:404bdd89395af7de00a88d5e9af98f5d&#34;&gt;Emulating future HPC SoC architectures using RISC-V: Farzad Fatollahi-Fard&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Should HPC take inspiration from the embedded market?&lt;/li&gt;
+&lt;li&gt;Is building an SoC for HPC a good idea? HPC is power limited
+(performance/Watt) which arguably means HPC and embedded requirements are
+aligned.&lt;/li&gt;
+&lt;li&gt;From a previous project case study (Green Wave), they found an embedded SoC
+design was performance/power competitive with Fermi. This had a 12x12 2D
+on-chip torus network with 676 compute cores, 33 supervisor cores, 1 PCI
+express interface, 8 Hybrid Memory Cube interfaces, &amp;hellip;&lt;/li&gt;
+&lt;li&gt;Proposed an FPGA-implemented SoC for HPC. This contains 4 Z-scale processors
+with a 2x2 concentrated mesh with 2 virtual channels. The Z-Scale was chosen
+for area-efficiency on FPGA.&lt;/li&gt;
+&lt;li&gt;The network is implemented using the &lt;a href=&#34;https://github.com/LBL-CoDEx/OpenSoCFabric&#34;&gt;OpenSoC
+fabric&lt;/a&gt; (open source and in
+chisel). AHB endpoints have now beed added and AXI is in-development.&lt;/li&gt;
+&lt;li&gt;A 96-core system was constructed using multiple FPGAs.&lt;/li&gt;
+&lt;li&gt;For more info, see &lt;a href=&#34;http://www.codexhpc.org/&#34;&gt;CoDEx HPC&lt;/a&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;grvi-phalanx-a-massively-parallel-risc-v-fpga-accelerator-jan-gray:404bdd89395af7de00a88d5e9af98f5d&#34;&gt;GRVI Phalanx. A massively parallel RISC-V FPGA accelerator: Jan Gray&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;GRVI is pronounced &amp;lsquo;groovy&amp;rsquo;.&lt;/li&gt;
+&lt;li&gt;There&amp;rsquo;s lots of interest in FPGA accelerators right now (Altera acquisition,
+MSR&amp;rsquo;s catapult).&lt;/li&gt;
+&lt;li&gt;FPGAs are an interesting platform. Massively parallel. Specialized.
+Connected. High throughput. Low latency. The big barrier is of course porting
+your software. Jan argues OpenCL for FPGAs is a major breakthrough for this
+problem, if you&amp;rsquo;re lucky enough to have an application that can be expressed
+in OpenCL.&lt;/li&gt;
+&lt;li&gt;Phalanx is an accelerator accelerator - an infrastructure making it easier
+to run you application on an FPGA and connect everything together. It is
+composed of processor+accelerator clusters+NoC.&lt;/li&gt;
+&lt;li&gt;Jan&amp;rsquo;s Razor: &amp;ldquo;In a CMP, cut inessential resources from each CPU, to maximize
+CPUs per die.&amp;rdquo;&lt;/li&gt;
+&lt;li&gt;Jan has achieved an RV32I datapath in about 250 LUTs. This core can achieve
+300-375MHz, 1.3-1.6CPI. The &amp;lsquo;GRVI&amp;rsquo; core is ~320 6-LUTs so &amp;ldquo;1 MIPS/LUT&amp;rdquo;.&lt;/li&gt;
+&lt;li&gt;How many can you fit on a modern FPGA? The limiting resource is really the
+block RAMs. In a cluster, two processing elements can share an instruction
+BRAM, and all PEs can share a cluster memory.&lt;/li&gt;
+&lt;li&gt;How should the clusters be interconnected? A 5-port virtual channel router
+might be a sensible choice in an ASIC, but does not map well to an FPGA.
+Instead use a &lt;a href=&#34;http://fpga.org/2015/09/03/introducing-hoplite/&#34;&gt;Hoplite&lt;/a&gt; 2D
+router. This is only 1% of the area x delay product of FPGA-optimized VC
+routers. Each cluster has a 300 bit connection to the Hoplite router (with a
+256bit payload).&lt;/li&gt;
+&lt;li&gt;400 of the GRVI Phalanx PEs can fit on a Xilinx KU040. The amortized cost of
+the router per processor is only 40 LUTs.&lt;/li&gt;
+&lt;li&gt;Can fit 32 GRVI Phalanx PEs on an Artix-7-35T.&lt;/li&gt;
+&lt;li&gt;Want to support different accelerated parallel programming models: SPMD,
+MIMD, MP. All potentially accelerated by custom GRVI And cluster fucntion
+units, custom memory or interconnects, custom accelerators on the NOC.&lt;/li&gt;
+&lt;li&gt;Next steps: debug/trace over NoC, Hoplite/AXI4 bridges, OpenCL stack,
+potential bridge to Chisel RISC-V infrastructure?&lt;/li&gt;
+&lt;li&gt;Question: how do I get this? Not available yet, and not yet sure on the
+licensing model.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;coreboot-on-risc-v-ron-minnich:404bdd89395af7de00a88d5e9af98f5d&#34;&gt;Coreboot on RISC-V: Ron Minnich&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Initializing the stuff outside the main CPU on a chromebook takes about 1
+billion instructions before it can start Linux.&lt;/li&gt;
+&lt;li&gt;Firmware, 1990-2005 &amp;ldquo;fire and forget&amp;rdquo;. Set al lthe stff kernels can&amp;rsquo;t do
+(e.g. LinuxBIOS), then get out of the way. But now there&amp;rsquo;s a push for the
+firmware to hang around after boot.&lt;/li&gt;
+&lt;li&gt;Ron argues this sucks. It&amp;rsquo;s slow, there&amp;rsquo;s no easy bugfix path, and it&amp;rsquo;s not
+SMP capable on x86.&lt;/li&gt;
+&lt;li&gt;Why doesn&amp;rsquo;t Ron like persistent firmware? It&amp;rsquo;s another attack vector,
+indistinguishable from a persistent embedded threat. Ron&amp;rsquo;s preference is the
+platform management code run as a kernel thread. Minion cores are ideal for
+this (Ron&amp;rsquo;s words rather than mine - I of course agree whole-heartedly).&lt;/li&gt;
+&lt;li&gt;coreboot is a GPLv2 BIOS replacement (not a bootloader). It has multiple
+possible payloads including SeaBIOS and depthcharge (used for verified boot on
+Chromebooks).&lt;/li&gt;
+&lt;li&gt;Port was started in October 2014 as a side project. The effort resumed in
+July 2015 with the privileged spec, and as-of September is up and running
+again. The most recent port runs on Spike but not QEMU (due to lack of support
+for the privileged spec).&lt;/li&gt;
+&lt;li&gt;RISC-V is a first class citizen in coreboot, all commits must pass tests for
+the RISC-V buildbot.&lt;/li&gt;
+&lt;li&gt;src/arch/riscv is 2685 LoC.&lt;/li&gt;
+&lt;li&gt;The Federal Office for Information Security in Germany runs a hardware test
+station for coreboot. As soon as real hardware is running, they&amp;rsquo;ve offered to
+integrate it into their system.&lt;/li&gt;
+&lt;li&gt;Lessons learned
+
+&lt;ul&gt;
+&lt;li&gt;provide a boot time SRAM (make sure the address is fixed and not aliased
+by DRAM once DRAM is up).&lt;/li&gt;
+&lt;li&gt;Provide a serial port.&lt;/li&gt;
+&lt;li&gt;Ron reiterates that runtime functions belong in the kernel, not persistent
+firmware.&lt;/li&gt;
+&lt;li&gt;Firmware tables always need translation by kernel, so make them text not
+binary.&lt;/li&gt;
+&lt;li&gt;Keep the mask ROM as simple as possible.&lt;/li&gt;
+&lt;li&gt;Don&amp;rsquo;t cheap out on SPI or flash part size. Just plan a 64MiB part.&lt;/li&gt;
+&lt;li&gt;Don&amp;rsquo;t reset the chipset on IE device not present.&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;risc-v-and-uefi-dong-wei-and-abner-chang:404bdd89395af7de00a88d5e9af98f5d&#34;&gt;RISC-V and UEFI: Dong Wei and Abner Chang&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;There is a UEFI Forum consistent of a board of 12 directors, 12 promoters,
+42 contributors, 213 adopters.&lt;/li&gt;
+&lt;li&gt;UEFI and ACPI are both now handled by the UEFI Forum.&lt;/li&gt;
+&lt;li&gt;A RISC-V UEFI port is taking place using EDKII (EFI Development Kit II) and
+OVMF (Open Virtual Machine Firmware).&lt;/li&gt;
+&lt;li&gt;The speakers are giving a very thorough description of the UEFI boot
+mechanism which I&amp;rsquo;m not able to do justice. You&amp;rsquo;re best waiting for the
+slides+video I&amp;rsquo;m afraid.&lt;/li&gt;
+&lt;li&gt;The project was started a few months ago, and can now boot to a UEFI shell.&lt;/li&gt;
+&lt;li&gt;They have created a new RISC-V QEMU target with some PC peripherals (CMOS,
+PM, PCI and other devices), and also implemented RISC-V machine mode.&lt;/li&gt;
+&lt;li&gt;Requests for new RISC-V spec additions: a periodic timer CSR, RTC with alarm
+CSR, PI management mode support, &amp;hellip; (sorry, missed some).&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;freebsd-and-risc-v-ruslan-bukin:404bdd89395af7de00a88d5e9af98f5d&#34;&gt;FreeBSD and RISC-V: Ruslan Bukin&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;FreeBSD will support RV64I in release 11.0.&lt;/li&gt;
+&lt;li&gt;Why use FreeBSD? Among other reasons, it gives a full-stack BSD license
+(RISC-V, FreeBSD, LLVM/Clang).&lt;/li&gt;
+&lt;li&gt;FreeBSD has been brought up on Spike.&lt;/li&gt;
+&lt;li&gt;The early boot assembly code will put the hardware in a known state, build a
+ring buffer for interrupts, initialise the page tables, enable the MMU, then
+finally branch to a virtual address and call into C code.&lt;/li&gt;
+&lt;li&gt;Userspace porting required modifications to jemalloc, csu (crt1.S, crtn.S,
+crti.S), libc, msun (libm), rtld-elf (the runtime linker).&lt;/li&gt;
+&lt;li&gt;The FreeBSD port is based on the ARMv8 port. It has a 25k line diff and took
+6 months from scratch.&lt;/li&gt;
+&lt;li&gt;Userland started working in December. Support will now be committed to
+FreeBSD SVN.&lt;/li&gt;
+&lt;li&gt;Next plans include multicore, FPU, increasing the virtual address space,
+DTrace, performance monitoring counters, QEMU, &amp;hellip;&lt;/li&gt;
+&lt;li&gt;Proposed changes: split sptbr to sptrbr0 and sptbr1 for the user VA and the
+kernel VA. This means there is no need to change SPTBR when changing the
+privilege level, and should reduce code size.&lt;/li&gt;
+&lt;li&gt;For more on the project, see the relevant &lt;a href=&#34;https://wiki.freebsd.org/riscv&#34;&gt;FreeBSD wiki
+page&lt;/a&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;building-the-risc-v-software-ecosystem-arun-thomas:404bdd89395af7de00a88d5e9af98f5d&#34;&gt;Building the RISC-V software ecosystem: Arun Thomas&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&amp;ldquo;2016 is the year of RISC-V&amp;rdquo;. Or at least, the year of RISC-V software. We
+have a great opportunity to push the software stack forwards.&lt;/li&gt;
+&lt;li&gt;What can we achieve by the end of the year? Hopefully upstereamed GNU
+toolchain and QEMU. More mature Clang/LLVM support, upstreamed OS support,
+Debian/RISC-V port, start thinking about Android and a real-time OS.&lt;/li&gt;
+&lt;li&gt;How do we get there? We need to recruit more RISC-V developers and make it
+easier for people to get started by producing more docs and specifications.&lt;/li&gt;
+&lt;li&gt;Right now, the RISC-V Github has had 48 contributors from a wide range of
+Universities, companies and OSS projects.&lt;/li&gt;
+&lt;li&gt;We should present talks and tutorials at developer conferences and local
+user group meetings.&lt;/li&gt;
+&lt;li&gt;If you have local patches, upstream them!&lt;/li&gt;
+&lt;li&gt;How to attract developers? Could fund developers/projects via the
+Foundation, apply to be a Google Summer of Code mentoring organization, update
+the list of open bugs and future requests on github and track contribution
+statistics.&lt;/li&gt;
+&lt;li&gt;We can make it much easier for people to get started by building Debian
+packages, upstreaming, and providing regular binary snapshots.&lt;/li&gt;
+&lt;li&gt;Spike is great for prototyping hardware features, but QEMU is a better tool
+for software development and a critical part of the RISC-V software story.&lt;/li&gt;
+&lt;li&gt;There&amp;rsquo;s more to specify. e.g. a platform specification (e.g. ARMv8 Server
+Base System Architecture), boot architecture (look at the ARMv8 Server Base
+Boot Requirements), RISC-V ABI, hypervisor, security.&lt;/li&gt;
+&lt;li&gt;Useful documents include a RISC-V Assembly Guide, some equivalent of the ARM
+Cortex-A Programmer&amp;rsquo;s Guide, and a New Contributor&amp;rsquo;s Guide.&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Untethered lowRISC release</title>
+      <link>http://www.lowrisc.org/blog/2015/12/untethered-lowrisc-release</link>
+      <pubDate>Fri, 18 Dec 2015 10:30:00 +0000</pubDate>
+      
+      <guid>http://www.lowrisc.org/blog/2015/12/untethered-lowrisc-release</guid>
+      <description>&lt;p&gt;Over the past several months, we&amp;rsquo;ve been working to provide a standalone or
+&amp;lsquo;untethered&amp;rsquo; SoC. Cores in the original &lt;a href=&#34;https://github.com/ucb-bar/rocket-chip&#34;&gt;Rocket
+chip&lt;/a&gt; rely on communicating with a
+companion processor via the host-target interface (HTIF) to access peripherals
+and I/O. This release removes this requirement, adding an I/O bus and
+instantiating FPGA peripherals. The accompanying &lt;a href=&#34;http://www.lowrisc.org/docs/untether-v0.2/&#34;&gt;tutorial&lt;/a&gt;, written by Wei Song, describes how to
+build this code release and explains the underlying structural changes. We
+support both the &lt;a href=&#34;http://www.xilinx.com/products/boards-and-kits/ek-k7-kc705-g.html&#34;&gt;Xilinx
+KC705&lt;/a&gt; and
+the lower-priced &lt;a href=&#34;http://store.digilentinc.com/nexys-4-ddr-artix-7-fpga-trainer-board-recommended-for-ece-curriculum/&#34;&gt;Nexys4
+DDR&lt;/a&gt;
+development boards. We would gladly welcome assistance in supporting other
+boards.&lt;/p&gt;
+
+&lt;p&gt;Please note that the codebase temporarily lacks support for tagged memory
+included in the &lt;a href=&#34;http://www.lowrisc.org/docs/tagged-memory-v0.1/&#34;&gt;previous release&lt;/a&gt;. We plan to re-integrate tagged memory support
+with additional optimisations early next year. You can find a detailed list of
+changes in the &lt;a href=&#34;http://www.lowrisc.org/docs/untether-v0.2/release/&#34;&gt;release notes&lt;/a&gt;.
+One highlight is support for &lt;a href=&#34;http://www.lowrisc.org/docs/untether-v0.2/vsim/&#34;&gt;RTL simulation using the open-source Verilator
+tool&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;This development milestone should make it easier for others to contribute. If
+you&amp;rsquo;re looking to get stuck in, you might want to consider looking at tasks
+such as:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Cleaning up the &lt;a href=&#34;https://github.com/lowRISC/riscv-linux&#34;&gt;RISC-V Linux port&lt;/a&gt;,
+improving devicetree support and removing the host-target interface.&lt;/li&gt;
+&lt;li&gt;Replacing use of proprietary peripheral IP with open-source IP cores.&lt;/li&gt;
+&lt;li&gt;Adding support for different FPGA development boards, including Altera
+boards.&lt;/li&gt;
+&lt;li&gt;Implementing the &lt;a href=&#34;http://www.cl.cam.ac.uk/techreports/UCAM-CL-TR-852.pdf&#34;&gt;BERI Programmable Interrupt
+Controller&lt;/a&gt; (p73), and
+adding necessary Linux support.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Our next development priorities are the re-integration of tagged memory
+support and an initial integration of a minion core design. We also expect to
+put out a job advert in the next few weeks for a new member of the lowRISC
+development team at the University of Cambridge Computer Laboratory.
+Interested applicants are encouraged to make informal enquiries about the post
+to Rob Mullins &lt;a href=&#34;mailto:Robert.Mullins@cl.cam.ac.uk&#34;&gt;Robert.Mullins@cl.cam.ac.uk&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;We hope to see many of you at the &lt;a href=&#34;http://riscv.org/workshop-jan2016.html&#34;&gt;3rd RISC-V
+Workshop&lt;/a&gt; in January, where Wei Song
+and Alex Bradbury will be presenting about lowRISC.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>lowRISC at ORConf 2015</title>
+      <link>http://www.lowrisc.org/blog/2015/08/lowrisc-at-orconf-2015</link>
+      <pubDate>Sun, 16 Aug 2015 10:51:14 +0100</pubDate>
+      
+      <guid>http://www.lowrisc.org/blog/2015/08/lowrisc-at-orconf-2015</guid>
+      <description>&lt;p&gt;Please join us October 9th-11th in Geneva, Switzerland for &lt;a href=&#34;http://openrisc.io/orconf/&#34;&gt;ORConf
+2015&lt;/a&gt;. The event is kindly being hosted by CERN at
+the &lt;a href=&#34;http://knowledgetransfer.web.cern.ch/ideasquare/about&#34;&gt;IdeaSquare&lt;/a&gt;.
+Last year&amp;rsquo;s ORConf was home to the first public talk on lowRISC and we&amp;rsquo;re
+delighted this year it will also be hosting a
+series of lowRISC and RISC-V discussions, serving as a European lowRISC and
+RISC-V workshop. ORConf has in recent years grown to cover a range of open
+source hardware topics beyond the original OpenRISC focus. Expect
+presentations and discussion on free and open source IP projects,
+implementations on FPGA and in silicon, verification, EDA tools, licensing and
+embedded software, to name a few.&lt;/p&gt;
+
+&lt;p&gt;The event will run from 13:00 until 18:30 on Friday, 09:30 until 19:30 on
+Saturday, and from 09:30 until 15:30 on Sunday. Friday will consist primarily
+of breakout sessions, planning, and discussion regarding lowRISC. If you are
+already contributing or your are thinking of getting involved and want to
+learn more, you are very welcome to join us. If you would like to present,
+do submit a proposal either via the link at the &lt;a href=&#34;http://openrisc.io/orconf/&#34;&gt;ORConf
+website&lt;/a&gt; or to me at asb@lowrisc.org. We hope to
+see many of you there - please &lt;a href=&#34;http://goo.gl/forms/KRZux8vnyO&#34;&gt;register
+here&lt;/a&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Second RISC-V Workshop: Day Two</title>
+      <link>http://www.lowrisc.org/blog/2015/06/second-risc-v-workshop-day-two</link>
+      <pubDate>Tue, 30 Jun 2015 17:00:45 +0100</pubDate>
+      
+      <guid>http://www.lowrisc.org/blog/2015/06/second-risc-v-workshop-day-two</guid>
+      <description>
+
+&lt;p&gt;It&amp;rsquo;s the second day of the &lt;a href=&#34;http://riscv.org/workshop-jun2015.html&#34;&gt;second RISC-V
+workshop&lt;/a&gt; today in Berkeley,
+California.  I&amp;rsquo;ll be keeping a semi-live blog of talks and announcements
+throughout the day.&lt;/p&gt;
+
+&lt;h2 id=&#34;z-scale-tiny-32-bit-risc-v-systems-yunsup-lee:1ef1186fa93d1e56b496df4f0f6ee20f&#34;&gt;Z-scale. Tiny 32-bit RISC-V Systems: Yunsup Lee&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Z-Scale is a family of tiny cores, similar in spirit to the ARM Cortex-M
+family. It integrates with the AHB-Lite interconnect.&lt;/li&gt;
+&lt;li&gt;Contrast to Rocket (in-order cores, 64-bit, 32-bit, dual-issue options), and
+BOOM (a family of out-of-order cores).&lt;/li&gt;
+&lt;li&gt;Z-Scale is a 32-bit 3-stage single-issue in-order pipeline executing the
+RV32IM ISA.&lt;/li&gt;
+&lt;li&gt;The instruction bus and data base are 32-bit AHB-Lite buses&lt;/li&gt;
+&lt;li&gt;There is a plan to publish a microarchitecture specification to make it easy
+for others to implement an equivalent design in the language of their choice.&lt;/li&gt;
+&lt;li&gt;The Zscale is slightly larger than the Cortex-M0 due to having 32 vs 16
+registers, 64-bit performance counters, and a fast multiply and divide. The
+plan is to add an option to generate a Zscale implementing RV32E (i.e. only
+having 16 registers).&lt;/li&gt;
+&lt;li&gt;Zscale is only 604 loc in Chisel. 274 lines for control, 267 for the
+datapath, and 63 for the top-level. Combine with 983loc borrowed from Rocket.&lt;/li&gt;
+&lt;li&gt;A Verilog implementation of Z-scale is being implemented. It&amp;rsquo;s currently
+1215 lines of code.&lt;/li&gt;
+&lt;li&gt;The repo is &lt;a href=&#34;https://github.com/ucb-bar/zscale&#34;&gt;here&lt;/a&gt;, but Yunsup needs to
+do a little more work to make it easily buildable. There will be a blog post
+on the RISC-V site soon.&lt;/li&gt;
+&lt;li&gt;All future Rocket development will move to the public
+&lt;a href=&#34;https://github.com/ucb-bar/rocket-chip&#34;&gt;rocket-chip&lt;/a&gt; repo!&lt;/li&gt;
+&lt;li&gt;Memory interfaces:
+
+&lt;ul&gt;
+&lt;li&gt;TileLink is the Berkeley cache-coherent interconnect&lt;/li&gt;
+&lt;li&gt;NASTI (Berkeley implementation of AXI4)&lt;/li&gt;
+&lt;li&gt;HASTI (implementation of AHB-lite)&lt;/li&gt;
+&lt;li&gt;POCI (implementation of APB)&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;The plan is to dump HTIF in Rocket, and add a standard JTAG debug interface.&lt;/li&gt;
+&lt;li&gt;Future work for Z-Scale includes a microarchitecture document, improving
+performance, implementing the C extensions, adding an MMU option, and adding
+more devices.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;boom-berkeley-out-of-order-machine-chris-celio:1ef1186fa93d1e56b496df4f0f6ee20f&#34;&gt;BOOM. Berkeley Out-of-order-Machine: Chris Celio&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;BOOM is a (work in progress) superscalar, out-of-order RISC-V processor
+written in Chisel.&lt;/li&gt;
+&lt;li&gt;Chris argues there&amp;rsquo;s been a general lack of effort in academia to build and
+evaluate out-of-order designs. As he points out, much research relies on
+software simulators with no area or power numbers.&lt;/li&gt;
+&lt;li&gt;Some of the difficult questions for BOOM are which benchmarks to use, and
+how many cycles you need to run. He points out that mapping to FPGA running at
+50MHz, it would take around a day for the SPEC benchmarks for a cluster of
+FPGAs.&lt;/li&gt;
+&lt;li&gt;The fact that rs1, rs2, rs3 and rd are always in the same space in the
+RISC-V ISA allows decode and rename to proceed in parallel.&lt;/li&gt;
+&lt;li&gt;BOOM supports the full RV64G standard. It benefits from reusing Rocket as a
+library of components.&lt;/li&gt;
+&lt;li&gt;BOOM uses explicit renaming, with a unified register file holding both
+x-regs and f-regs (floating point). A unified issue window holds all
+instructions.&lt;/li&gt;
+&lt;li&gt;BOOM is synthesisable and hits 2GHz (30 FO4) in TSMC 45nm.&lt;/li&gt;
+&lt;li&gt;BOOM is 9kloc of its own code, and pulls in 11.5kloc from other libraries
+(rocket, uncore, floating poing)&lt;/li&gt;
+&lt;li&gt;BOOM compares well to an ARM Cortex-A9 and A15 in terms of CoreMark/MHz. A
+4-wide BOOM gives a similar CoreMark/MHz to the A15.&lt;/li&gt;
+&lt;li&gt;Future work will look at new applications, a ROCC interface, new
+microarchitecture designs. The plan is to open source by this winter.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;fabscalar-risc-v-rangeen-basu-roy-chowdhury:1ef1186fa93d1e56b496df4f0f6ee20f&#34;&gt;Fabscalar RISC-V: Rangeen Basu Roy Chowdhury&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;A FabScalar RISC-V version should be released in the next few days&lt;/li&gt;
+&lt;li&gt;FabScalar generates synthesisable RTL for arbitrary superscalar cores with a
+canonical superscalar template.&lt;/li&gt;
+&lt;li&gt;FabScalar uses a library of pipeline stages, providing many different
+designs for each canonical pipeline stage.&lt;/li&gt;
+&lt;li&gt;Two chips have been built with FabScalar so far (using PISA).&lt;/li&gt;
+&lt;li&gt;The RISC-V port was built on the previous PIA &amp;lsquo;Superset Core&amp;rsquo;. This had
+64-bit instructions and 32-bit address and data.&lt;/li&gt;
+&lt;li&gt;For RISC-V FabScalar they have a unified physical register file and unified
+issue queue for floating point (so the FP ALU is treated like just another
+functional unit).&lt;/li&gt;
+&lt;li&gt;FabScalar RISC-V will be released as an open source tool complete with
+uncore components and verification infrastructure. It will be available on
+GitHub in the fall.&lt;/li&gt;
+&lt;li&gt;The license isn&amp;rsquo;t yet decided, but there&amp;rsquo;s a good chance it will be BSD.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;aristotle-a-logically-determined-clockless-risc-v-rv32i-matthew-kim:1ef1186fa93d1e56b496df4f0f6ee20f&#34;&gt;Aristotle. A Logically Determined (Clockless) RISC-V RV32I: Matthew Kim&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Two logical values are defined. Data and null (not data). Then define
+threshold operators to produce &amp;lsquo;null convention logic&amp;rsquo;.&lt;/li&gt;
+&lt;li&gt;See &lt;a href=&#34;https://users.soe.ucsc.edu/~scott/papers/NCL2.pdf&#34;&gt;here&lt;/a&gt; for more on
+Null Convention Logic&lt;/li&gt;
+&lt;li&gt;This results in a system built entirely of combinational logic. I couldn&amp;rsquo;t
+hope to accurately summarise the work here. I&amp;rsquo;m afraid you might be best off
+waiting for the recording.&lt;/li&gt;
+&lt;li&gt;Current executing compiled quicksort at approximately 400mips (without
+serious optimisation).&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;risc-v-erification-prashanth-mundkur:1ef1186fa93d1e56b496df4f0f6ee20f&#34;&gt;RISC-V(erification): Prashanth Mundkur&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Current architectures e.g. those from Intel and ARM have large errata sheets
+published semi-regularly. Can we do better for RISC-V?&lt;/li&gt;
+&lt;li&gt;Need an unambiguous formal ISA specification which should be coupled to a
+processor implementation amenable to the two, with a formal link between the
+two.&lt;/li&gt;
+&lt;li&gt;Currently specifying RISC-V in the &lt;a href=&#34;http://www.cl.cam.ac.uk/~acjf3/l3/&#34;&gt;L3
+DSL&lt;/a&gt;. The interpreter is used as a
+reference oracle for processor implementations.&lt;/li&gt;
+&lt;li&gt;The current state of the spec is &lt;a href=&#34;https://github.com/pmundkur/l3riscv&#34;&gt;available on
+Github&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;The work has already helped to highlight some areas where clarification is
+needed in the written specification&lt;/li&gt;
+&lt;li&gt;Next steps would involve support for the compressed instruction set and
+floating point, booting Linux, and using for tandem-verification (e.g. with
+Flue from Bluespec).&lt;/li&gt;
+&lt;li&gt;Hope to export usable HOL4 formal definitions, and use that to prove
+information properties (e.g. non-interference and information flow in
+low-level privileged code).&lt;/li&gt;
+&lt;li&gt;The talk is now moving to the second half, where Prashanth is presenting
+Nirav Dave&amp;rsquo;s work&lt;/li&gt;
+&lt;li&gt;This work is looking at rapidly verifying architectural and
+micro-architectural variants of RISC-V. Rely on translating between
+microarchitectural-states and ISA-level states.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;towards-general-purpose-tagged-memory-wei-song:1ef1186fa93d1e56b496df4f0f6ee20f&#34;&gt;Towards General-Purpose Tagged Memory: Wei Song&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Wei Song is presenting his &lt;a href=&#34;http://www.lowrisc.org/blog/2015/04/lowrisc-tagged-memory-preview-release/&#34;&gt;work on tagged memory support in
+lowRISC&lt;/a&gt;.&lt;br /&gt;
+I&amp;rsquo;ll post the slides shortly.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;raven3-a-28nm-risc-v-vector-processor-with-on-chip-dc-dc-convertors-brian-zimmer:1ef1186fa93d1e56b496df4f0f6ee20f&#34;&gt;Raven3, a 28nm RISC-V Vector Processor with On-Chip DC/DC Convertors: Brian Zimmer&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Support dynamic voltage and frequency scaling on-chip with no off-chip
+components.&lt;/li&gt;
+&lt;li&gt;Want to switch all converters simultaneously to avoid charge sharing. The
+clock frequency adapts to track the voltage ripple.&lt;/li&gt;
+&lt;li&gt;Raven has a RISC-V scalar core, vector accelerator. 16KB scalar instruction
+cache, 32KB shared data cache, and 8KB instruction cache. This has a 1.19mm^2
+area.&lt;/li&gt;
+&lt;li&gt;The converter area is 0.19mm^2&lt;/li&gt;
+&lt;li&gt;The chip was wire-bonded on to a daughter-board, which was then connected to
+a larger motherboard connected to a Zedboard&lt;/li&gt;
+&lt;li&gt;Converter transitions are less than 20ns, which allows extremely
+fine-grained DVFS.&lt;/li&gt;
+&lt;li&gt;Raven3 showed 80% efficiency across a wide voltage range and achieved
+26GFLOPS/W using the on-chip conversion.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;evaluating-risc-v-cores-for-pulp-an-open-parallel-ultra-low-power-platform-sven-stucki:1ef1186fa93d1e56b496df4f0f6ee20f&#34;&gt;Evaluating RISC-V Cores for PULP. An Open Parallel Ultra-Low-Power Platform : Sven Stucki&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Approximately 40 people working on PULP in some way&lt;/li&gt;
+&lt;li&gt;Ultimate (ambitious) goal is one 1GOPS/mW (or 1pJ/op). Also hope to achieve
+energy proportionality.&lt;/li&gt;
+&lt;li&gt;Plan is to be open source on GitHub&lt;/li&gt;
+&lt;li&gt;PULP has been silicon-proven in 28nm, 65nm, 130nm and 180nm. The team have
+tape-outs planned through to 2016.&lt;/li&gt;
+&lt;li&gt;Sven has replaced the OpenRISC frontend with a RISC-V decoder, hoping to
+take advantage of the more active community and compressed instruction set
+support.&lt;/li&gt;
+&lt;li&gt;PULP is a simple 4-stage design supporting RV32IC as well as the mul
+instruction from the M extension.&lt;/li&gt;
+&lt;li&gt;Synthesising for UMC65, they see 22kilo-gate equivalent per core&lt;/li&gt;
+&lt;li&gt;The OR10N core was a new OpenRISC implementation with support for hardware
+loops, pre/postincrement memory access and vector instructions.&lt;/li&gt;
+&lt;li&gt;Heading for a GlobalFoundries 28nm tapeout in Q4 2015&lt;/li&gt;
+&lt;li&gt;See more on PULP &lt;a href=&#34;http://iis-projects.ee.ethz.ch/index.php/PULP&#34;&gt;at the
+website&lt;/a&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;em&gt;Alex Bradbury&lt;/em&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Second RISC-V Workshop: Day One</title>
+      <link>http://www.lowrisc.org/blog/2015/06/second-risc-v-workshop-day-one</link>
+      <pubDate>Mon, 29 Jun 2015 17:02:57 +0100</pubDate>
+      
+      <guid>http://www.lowrisc.org/blog/2015/06/second-risc-v-workshop-day-one</guid>
+      <description>
+
+&lt;p&gt;The &lt;a href=&#34;http://riscv.org/workshop-jun2015.html&#34;&gt;second RISC-V workshop&lt;/a&gt; is going
+on today and tomorrow in Berkeley, California. I&amp;rsquo;ll be keeping a semi-live
+blog of talks and announcements throughout the day.&lt;/p&gt;
+
+&lt;h2 id=&#34;introductions-and-welcome-krste-asanović:1198e896ab6f8fa7b8bfab04cfcd8c73&#34;&gt;Introductions and welcome: Krste Asanović&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;The beginning of Krste&amp;rsquo;s talk will be familiar for anyone who&amp;rsquo;s seen an
+introduction to RISC-V before. Pleasingly, there are a lot of new faces here
+at the workshop so the introduction of course makes a lot of sense.&lt;/li&gt;
+&lt;li&gt;Although the core RISC-V effort is focused on the ISA specification, there
+is interest in looking to expand this to look at how to standardise access to
+I/O etc.&lt;/li&gt;
+&lt;li&gt;RV32E is a &amp;ldquo;pre-emptive strike&amp;rdquo; at those who might be tempted to fragment
+the ISA space for very small cores. It is a 16-register subset of RV32I.&lt;/li&gt;
+&lt;li&gt;The compressed instruction set has been released since the last workshop,
+there will be talk later today about it. It gives 25-30% code size reduction,
+and surprisingly there&amp;rsquo;s still lots of 16-bit encode space for additional
+extensions.&lt;/li&gt;
+&lt;li&gt;Krste makes the point that AArch64 has 8 addressing modes vs just 1 for
+RISC-V. The comparison of the size of the GCC/LLVM backends is perhaps less
+interesting given that the ARM backend actually has rather a lot more
+optimisations.&lt;/li&gt;
+&lt;li&gt;&amp;ldquo;Simplicity breeds contempt&amp;rdquo;. &amp;ldquo;So far, no evidence more complex ISA is
+justified for general code&amp;rdquo;&lt;/li&gt;
+&lt;li&gt;Will be talking about a Cray-style vector ISA extension later today (i.e.&lt;br /&gt;
+not packed-SIMD ISA or GPU-style).&lt;/li&gt;
+&lt;li&gt;Rocket core is only about ~12kloc of Chisel in total. ~5kloc for the
+processor, ~2kloc for floating-point units, ~4.6kloc for &amp;lsquo;uncore&amp;rsquo; (coherence
+hubs, L2, caches etc).&lt;/li&gt;
+&lt;li&gt;State of the RISC-V Nation: many companies &amp;lsquo;kicking the tires&amp;rsquo;. If you were
+thinking of designing your own RISC ISA for project, then use RISC-V. If you
+need a complete working support core &lt;em&gt;today&lt;/em&gt; then pay $M for an industry core.&lt;br /&gt;
+If you need it in 6 months, then consider spending that $M on RISC-V
+development.&lt;/li&gt;
+&lt;li&gt;RISC-V Foundation is being formed, a 501&amp;copy;(6), with Rick O&amp;rsquo;Conner as
+Executive Director. The mission statement is &amp;ldquo;to standardize, protect, and
+promote the free and open RISC-V instruction set architecture and its hardware
+and software ecosystem for use in all computing devices&amp;rdquo;. Plan is to publicly
+announce before HotChips later this year and is actively recruiting companies
+who want to be &amp;lsquo;founding&amp;rsquo; members. You will need to be a member of the
+foundation in good standing to use the RISC-V trademark (unless you are a
+non-profit).&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;an-update-on-lowrisc-alex-bradbury:1198e896ab6f8fa7b8bfab04cfcd8c73&#34;&gt;An update on lowRISC: Alex Bradbury&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Many thanks to the audience for all the questions. My slides are &lt;a href=&#34;https://speakerdeck.com/asb/an-update-on-lowrisc&#34;&gt;available
+here&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;Unfortunately the SHAKTI project team from India have been caught up in the
+malfunctioning US State Department computer systems and so haven&amp;rsquo;t been able
+to get visas to give their talk&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;compressed-extension-proposal-david-patterson:1198e896ab6f8fa7b8bfab04cfcd8c73&#34;&gt;Compressed Extension Proposal: David Patterson&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Looked at existing compressed instruction sets, and tried to simplify things
+and throw away ideas that add complexity but provide little benefit.&lt;/li&gt;
+&lt;li&gt;Ended up with a specification that is pleasingly minimal, with each
+instruction decoding to a single RV32 instruction.&lt;/li&gt;
+&lt;li&gt;Keen on community feedback on additional RVC instructions. Identified a set
+of 24 that have little impact on current compiler-generated code, but could be
+useful for some use cases.&lt;/li&gt;
+&lt;li&gt;You can read the RVC spec
+&lt;a href=&#34;http://riscv.org/spec/riscv-compressed-spec-v1.7.pdf&#34;&gt;here&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;Points out that Thumb2 is only a 32-bit address ISA. Although it is slightly
+smaller than RV32C, the RISC-V compressed spec has the benefit of supporting
+64-bit addressing.&lt;/li&gt;
+&lt;li&gt;Rather than adding the complexity of load multiple and store multiple,
+experimented with adding calls to a function that does the same thing. This
+hurts performance, but gives a large benefit for code size.&lt;/li&gt;
+&lt;li&gt;One question was on the power consumption impact. Don&amp;rsquo;t have numbers on that&lt;br /&gt;
+yet.&lt;/li&gt;
+&lt;li&gt;Should we require the compressed instruction set? Don&amp;rsquo;t want to add it to
+the minimal &amp;lsquo;I&amp;rsquo; instruction set, but could add it to the standard expected by
+Linux.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;goblincore64-a-risc-v-extension-for-data-intensive-computing-john-leidel:1198e896ab6f8fa7b8bfab04cfcd8c73&#34;&gt;GoblinCore64. A RISC-V Extension for Data Intensive Computing: John Leidel&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Building a processor design aimed at data intensive algorithms and
+applications. Applications tend to be very cache unfriendly.&lt;/li&gt;
+&lt;li&gt;GC64 (Goblin Core) has a thread control unit. A very small micro-coded unit
+(e.g. implement RV64C) is microcoded to perform the contest switching task.&lt;/li&gt;
+&lt;li&gt;Have added user-visible registers for thread id, thread context, task
+exception register etc etc.&lt;/li&gt;
+&lt;li&gt;The GKEY supervisor register contains a 64-bit key loaded by the kernel. It
+determines whether a task may spawn and execute work on neighboring task
+processors, providing a very rudimentary protection mechanism.&lt;/li&gt;
+&lt;li&gt;Making use of RV128I - it&amp;rsquo;s not just there for fun!&lt;/li&gt;
+&lt;li&gt;Support various instruction extensions, e.g. IWAIT, SWPAWN, JOIN, GETTASK,
+SETTASK. Basic operations needed to write a thread management system (such as
+pthreads) implemented as microcoded instructions in the RISC-V ISA.&lt;/li&gt;
+&lt;li&gt;Also attempting to define the data structures which contain task queue data.&lt;/li&gt;
+&lt;li&gt;Currently looking at lowRISC-style minion cores to implement microcoded
+memory coalescing units.&lt;/li&gt;
+&lt;li&gt;Read the GC64 specification doc
+&lt;a href=&#34;http://discl.cs.ttu.edu/gitlab/gc64/gc64-doc/tree/master&#34;&gt;here&lt;/a&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;vector-extension-proposal-krste-asanović:1198e896ab6f8fa7b8bfab04cfcd8c73&#34;&gt;Vector Extension Proposal: Krste Asanović&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Goals: efficient and scalable to all reasonable design points. Be a good
+compiler target, and to support implicit auto-vectorisation through OpenMP and
+explicit SPMD (OpenCL) programming models. Want to work with virtualisation
+layers, and fit into the standard 32-bit encoding space.&lt;/li&gt;
+&lt;li&gt;Krste is critical of GPUs for general compute. I can summarise his arguments
+here, but the slides will be well worth a read. Krste has spent decades
+working on vector machines.&lt;/li&gt;
+&lt;li&gt;With packed SIMD you tend to need completely new instructions for wider
+SIMD. Traditional vector machines allow you to set the vector length register
+to provide a more uniform programming model. This makes loop strip-mining more
+straight-forward.&lt;/li&gt;
+&lt;li&gt;Add up to 32 vector data registers (v0-v31) in addition to the basic scalar
+x and f registers. Each vector register is at least 3 elements each, with
+variable bits per element. Also add 8 vector predicate registers, with 1-bit
+per element. Finally, add vector configuration and vector length CSR
+registers.&lt;/li&gt;
+&lt;li&gt;Other features
+
+&lt;ul&gt;
+&lt;li&gt;Reconfigurable vector registers allow you to exchange unused architectural
+registers for longer vectors. e.g. if you only need 4 architectural vector
+registers you&amp;rsquo;ll have a larger vector length.&lt;/li&gt;
+&lt;li&gt;Mixed-precision support&lt;/li&gt;
+&lt;li&gt;Intenger, fixed-point, floating-point arithmetic&lt;/li&gt;
+&lt;li&gt;Unit-stride, strided, indexed load/stores&lt;/li&gt;
+&lt;li&gt;Predication&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;Mixed-precision support allows you to subdivide a physical register into
+multiple narrower architectural registers as requested.&lt;/li&gt;
+&lt;li&gt;Sam binary code works regardless of number of physical register bits and the
+number of physical lanes.&lt;/li&gt;
+&lt;li&gt;Use a polymorphic instruction encoding. e.g. a single signed integer ADD
+opcode that works on different size inputs and outputs.&lt;/li&gt;
+&lt;li&gt;Have separate integer and floating-point loads and stores, where the size is
+inherent in the destination register number.&lt;/li&gt;
+&lt;li&gt;All instructions are implicitly predicated under the first predicate
+register by default.&lt;/li&gt;
+&lt;li&gt;What is the difference between V and Hwacha? Hwacha is a non-standard
+Berkeley vector extensions design to push the state-of-the-art for
+in-order/decoupled vector machines. There are similarities in the lane
+microarchitecture. Current focus is bringing up OpenCL for Hwacha, with the V
+extension to follow.&lt;/li&gt;
+&lt;li&gt;Restartable page faults are supported. Similar to the DEC Vector VAX.&lt;/li&gt;
+&lt;li&gt;Krste pleads people not to implement a packed SIMD extension, pointing out
+that a minimal V implementation would be very space efficient.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;privileged-architecture-proposal-andrew-waterman:1198e896ab6f8fa7b8bfab04cfcd8c73&#34;&gt;Privileged Architecture Proposal: Andrew Waterman&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Aims to provide a clean split between layers of the stack.&lt;/li&gt;
+&lt;li&gt;You can read the privileged spec
+&lt;a href=&#34;http://riscv.org/spec/riscv-privileged-spec-v1.7.pdf&#34;&gt;here&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;Supports four privilege modes. User, Supervisor, Hypervisor and Machine
+mode.&lt;/li&gt;
+&lt;li&gt;For a simple embedded system that only needs M-mode there is a low
+implementation cost. Only 2^7 bits of architectural state in addition to the
+user ISA, plus 2^7 more bits for timers and another 2^7 for basic performance
+counters.&lt;/li&gt;
+&lt;li&gt;Defined the basic virtual memory architectures to support current Unix-style
+operating systems. The design is fairly conventional, using 4KiB pages.&lt;/li&gt;
+&lt;li&gt;Why go with 4KiB pages rather than 8KiB as was the initial plan? Concerned
+with porting software hard-coded to expect 4KiB pages. Also concerns about
+internal fragmentation.&lt;/li&gt;
+&lt;li&gt;Physical memory attributes such as cacheability are not encoded in the page
+table in RISC-V. Two major reasons that Andrew disagrees with this are that
+the granularity may not be tied to the page size, plus it is problematic for
+virtualisation. Potentially coherent DMA will become more common meaning you
+needn&amp;rsquo;t worry about these attributes.&lt;/li&gt;
+&lt;li&gt;Want to support device interactions via a virtio-style interface.&lt;/li&gt;
+&lt;li&gt;The draft Supervisor Binary Interface will be released with the next
+privileged ISA draft. It includes common functionality for TLB shootdowns,
+reboot/shutdown, sending inter-processor interrupts etc etc. This is a similar
+idea to the PALCode on the Alpha.&lt;/li&gt;
+&lt;li&gt;Hardware-accelerated virtualization (H-mode) is planned, but not yet
+specified.&lt;/li&gt;
+&lt;li&gt;A draft version of v1.8 of the spec is expected this summer, with a frozen
+v2.0 targeted for the fall.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;rapidio-the-unified-fabric-for-performance-critical-computing-rick-o-connor:1198e896ab6f8fa7b8bfab04cfcd8c73&#34;&gt;RapidIO. The Unified Fabric for Performance-Critical Computing: Rick O&amp;rsquo;Connor&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;There are more 10Gbps RapidIO ports on the planet than there are 10Gbps
+Ethernet ports. This is primarily due to the 100% market penetration in 4G/LTE
+and 60% global 3G.&lt;/li&gt;
+&lt;li&gt;The IIT Madras team are using RapidIO extensively for their RISC-V work&lt;/li&gt;
+&lt;li&gt;Has been doing work in the data center and HPC space. Looking to use the AXI
+ACE and connect that to RapidIO.&lt;/li&gt;
+&lt;li&gt;There is interesting work on an open source RapidIO stack.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;cava-cluster-in-a-rack-peter-hsu:1198e896ab6f8fa7b8bfab04cfcd8c73&#34;&gt;CAVA. Cluster in a rack: Peter Hsu&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Problem: designing a new computer is expensive. But 80% is the same every
+time.&lt;/li&gt;
+&lt;li&gt;CAVA is not the same as the Oracle RAPID project.&lt;/li&gt;
+&lt;li&gt;Would like to build a 1024-node cluster in a rack. DDR4 3200 = 25.6GB/s per
+64-bit channel. Each 1U card would be about 600W with 32 nodes.&lt;/li&gt;
+&lt;li&gt;Looking at a 96-core 10nm chip (scaled from a previous 350nm project).&lt;br /&gt;
+Suppose you have a 3-issue out of order core (600K gates) and 32KiB I+d cache,
+that would be around 0.24mm^2 in 10nm.&lt;/li&gt;
+&lt;li&gt;Estimate a vector unit might be around the same area.&lt;/li&gt;
+&lt;li&gt;Peter has detailed estimates for per-chip power, but it&amp;rsquo;s probably best to
+refer to the slides for these.&lt;/li&gt;
+&lt;li&gt;Research plan for the cluster involves a unified simulation environment,
+running on generic clusters of x86 using open-source software. Everyone uses
+the same simulator to perform &amp;ldquo;apples to apples&amp;rdquo; comparison. This allows easy
+replication of published work.&lt;/li&gt;
+&lt;li&gt;Simulation infrastructure will involve a pipeline siumlator, SoC simulator
+(uncore logic), and a network simulator.&lt;/li&gt;
+&lt;li&gt;Interested in applying Cray-style vectors to database workloads&lt;/li&gt;
+&lt;li&gt;Could also have the ability to make associativity ways and possible
+individual cache lines lockable.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;em&gt;Alex Bradbury&lt;/em&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Summer of Code students for lowRISC</title>
+      <link>http://www.lowrisc.org/blog/2015/05/summer-of-code-students-for-lowrisc</link>
+      <pubDate>Wed, 13 May 2015 20:45:07 +0100</pubDate>
+      
+      <guid>http://www.lowrisc.org/blog/2015/05/summer-of-code-students-for-lowrisc</guid>
+      <description>&lt;p&gt;lowRISC was fortunate enough to be chosen as a mentoring organisation in this
+year&amp;rsquo;s &lt;a href=&#34;https://developers.google.com/open-source/soc/&#34;&gt;Google Summer of
+Code&lt;/a&gt;. The Google Summer of
+Code program funds students to work on open source projects over the summer.
+We had 52 applications across the &lt;a href=&#34;http://www.lowrisc.org/docs/gsoc-2015-ideas/&#34;&gt;range of project
+ideas&lt;/a&gt; we&amp;rsquo;ve been advertising.
+As you can see from the range of project ideas, lowRISC is taking part as an
+umbrella organisation, working with a number of our friends in the wider open
+source software and hardware community.
+We were allocated three slots from Google, and given the volume of high
+quality applications making the selection was tremendously difficult. We have
+actually been able to fund an additional three applicants from other sources,
+but even then there were many promising projects we couldn&amp;rsquo;t support. We are
+extremely grateful to all the students who put so much time and effort in to
+their proposals, and to everyone who volunteered to mentor. The six &amp;lsquo;summer of
+code&amp;rsquo; projects for lowRISC are:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://www.google-melange.com/gsoc/project/details/google/gsoc2015/asy/5757334940811264&#34;&gt;An online Verilog IDE based on
+YosysJS&lt;/a&gt;.
+Baptiste Duprat mentored by Clifford Wolf&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Baptiste will be working with an Emscripten-compiled version of
+the &lt;a href=&#34;http://www.clifford.at/yosys/&#34;&gt;Yosys&lt;/a&gt; logic synthesis tool, building an
+online Verilog IDE on top
+of it which would be particularly suitable for training and teaching
+materials. A big chunk of the proposed work is related to visualisation of the
+generated logic. Improving the accessibility of hardware design is essential for
+growing the potential contributor base to open source hardware
+projects like lowRISC, and this is just the start of our efforts in that
+space.&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://www.google-melange.com/gsoc/project/details/google/gsoc2015/hesham/5868011953061888&#34;&gt;Porting seL4 to
+RISC-V&lt;/a&gt;.
+Hesham ALMatary mentored by Stefan Wallentowitz&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://sel4.systems/&#34;&gt;seL4&lt;/a&gt; is a formally verified microkernel, which
+currently has ports
+for x86 and ARM. Hesham will be performing a complete port to
+RISC-V/lowRISC. Security and microkernels are of great interest to
+many in the community. It&amp;rsquo;s also a good opportunity to expand RISC-V platform
+support and to put the recently released &lt;a href=&#34;https://blog.riscv.org/2015/05/risc-v-draft-privileged-architecture-version-1-7-released/&#34;&gt;RISC-V Privileged Architecture
+Specification&lt;/a&gt;
+through its paces. Hesham previously performed a port of RTEMS to
+OpenRISC.&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://www.google-melange.com/gsoc/project/details/google/gsoc2015/prannoy1994/5651442522128384&#34;&gt;Porting jor1k to
+RISC-V&lt;/a&gt;.
+Prannoy Pilligundla mentored by Sebastian Macke&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://s-macke.github.io/jor1k/&#34;&gt;jor1k&lt;/a&gt; is by far the
+&lt;a href=&#34;https://github.com/s-macke/jor1k/wiki/Benchmark-with-other-emulators&#34;&gt;fastest&lt;/a&gt;
+Javascript-based full system
+simulator. It also features a network device, filesystem support, and
+a framebuffer. Prannoy will be adding support for RISC-V and look at
+supporting some of the features we offer on lowRISC such as &lt;a href=&#34;http://www.lowrisc.org/docs/memo-2014-001-tagged-memory-and-minion-cores/&#34;&gt;minion
+cores or tagged
+memory&lt;/a&gt;.
+This will be great not only as a demo, but
+also have practical uses in tutorial or educational material.&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;TCP offload to minion cores using rump kernels. Sebastian Wicki
+mentored by Justin Cormack&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;The intention here is to get a &lt;a href=&#34;http://rumpkernel.org/&#34;&gt;rump kernel&lt;/a&gt;
+(essentially a libified
+NetBSD) running bare-metal on a simple RISC-V system and evaluate
+exposing the TCP/IP stack for use by other cores. e.g. a TCP/IP
+offload engine running on a minion core. TCP offload is a good
+starting point, but of course the same concept could be applied
+elsewhere. For example, running a USB mass storage driver (and filesystem
+implementation) on a minion core and providing a simple high-level
+interface to the application cores.&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Extend Tavor to support directed generation of assembly test cases.
+Yoann Blein mentored by Markus Zimmermann&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/zimmski/tavor&#34;&gt;Tavor&lt;/a&gt; is a sophisticated fuzzing tool
+implemented in Go. Yoann
+will be extending it to more readily support specifying instruction
+set features and generating a fuzzing suite targeting an ISA such as
+RISC-V. Yoann has some really interesting ideas on how to go about
+this, so I&amp;rsquo;m really interested in seeing where this on ends up.&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Implement a Wishbone to TileLink bridge and extend TileLink
+documentation. Thomas Repetti mentored by Wei Song&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://en.wikipedia.org/wiki/Wishbone_%28computer_bus%29&#34;&gt;Wishbone&lt;/a&gt; is the
+interconnect of choice for most existing open
+source IP cores, including most devices on
+&lt;a href=&#34;http://opencores.org/&#34;&gt;opencores.org&lt;/a&gt;. The Berkeley
+&lt;a href=&#34;https://github.com/ucb-bar/rocket-chip&#34;&gt;Rocket&lt;/a&gt; RISC-V implementation uses
+their own &amp;lsquo;TileLink&amp;rsquo; protocol (we provide a &lt;a href=&#34;http://www.lowrisc.org/docs/tagged-memory-v0.1/rocket-chip/&#34;&gt;brief
+overview&lt;/a&gt;. By providing a
+reusable bridge, this project will allow the easy reuse of opencores devices
+and leverage the many man-years of effort that has already gone in to them.&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;The first 3 of the above projects are part of Google Summer of Code
+and the bottom 3 directly funded, operating over roughly the same timeline.
+We&amp;rsquo;re also going to be having two local
+students interning with us here at the University of Cambridge
+Computer Lab starting towards the end of June, so it&amp;rsquo;s going to be a
+busy and productive summer. It bears repeating just how much we appreciate the
+support of everyone involved so far - Google through their Summer of Code
+initiative, the students, and those who&amp;rsquo;ve offered to act as mentors. We&amp;rsquo;re
+very excited about these projects, so please join us in welcoming the students
+involved to our community. If you have any questions, suggestions, or guidance
+please do leave them in the comments.&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Alex Bradbury&lt;/em&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>lowRISC tagged memory preview release</title>
+      <link>http://www.lowrisc.org/blog/2015/04/lowrisc-tagged-memory-preview-release</link>
+      <pubDate>Mon, 13 Apr 2015 22:28:10 +0000</pubDate>
+      
+      <guid>http://www.lowrisc.org/blog/2015/04/lowrisc-tagged-memory-preview-release</guid>
+      <description>&lt;p&gt;We&amp;rsquo;re pleased to announce the &lt;a href=&#34;http://www.lowrisc.org/docs/tagged-memory-v0.1/&#34;&gt;first lowRISC preview release&lt;/a&gt;, demonstrating support for tagged memory as
+described in &lt;a href=&#34;http://www.lowrisc.org/docs/memo-2014-001-tagged-memory-and-minion-cores/&#34;&gt;our memo&lt;/a&gt;. Our ambition with lowRISC is to provide an open-source System-on-Chip
+platform for others to build on, along with low-cost development boards
+featuring a reference implementation. Although there&amp;rsquo;s more work to be done on
+the tagged memory implementation, now seemed a good time to document what
+we&amp;rsquo;ve done in order for the wider community to take a look. Please see our
+&lt;a href=&#34;http://www.lowrisc.org/docs/tagged-memory-v0.1/&#34;&gt;full tutorial&lt;/a&gt; which describes in some
+detail the changes we&amp;rsquo;ve made to the Berkeley &lt;a href=&#34;https://github.com/ucb-bar/rocket&#34;&gt;Rocket
+core&lt;/a&gt;, as well as how you can build and try
+it out for yourself (either in simulation, or on an FPGA). We&amp;rsquo;ve gone to some
+effort to produce this documentation, both to document our work, and to share
+our experiences building upon the Berkeley RISC-V code releases in the hopes
+they&amp;rsquo;ll be useful to other groups.&lt;/p&gt;
+
+&lt;p&gt;The initial motivation for tagged memory was to prevent control-flow hijacking
+attacks, though there are a range of other potential uses including
+fine-grained memory synchronisation, garbage collection, and debug tools.&lt;br /&gt;
+Please note that the instructions used to manipulate tagged memory in this
+release (&lt;code&gt;ltag&lt;/code&gt; and &lt;code&gt;stag&lt;/code&gt;) are only temporary and chosen simply because they
+require minimal changes to the core pipeline. Future work will include
+exploring better ISA support, collecting performance numbers across a range of
+tagged memory uses and tuning the tag cache. We are also working on developing
+an &amp;lsquo;untethered&amp;rsquo; version of the SoC with the necessary peripherals integrated
+for standalone operation.&lt;/p&gt;
+
+&lt;p&gt;If you&amp;rsquo;ve visited lowrisc.org before, you&amp;rsquo;ll have noticed we&amp;rsquo;ve changed a few
+things around. Keep an eye on this blog (and its &lt;a href=&#34;http://www.lowrisc.org/index.xml&#34;&gt;RSS
+feed&lt;/a&gt;) to keep an eye on developments - we
+expect to be updating at least every couple of weeks. We&amp;rsquo;re very grateful to
+the RISC-V team at Berkeley for all their support and guidance. A large
+portion of the credit for this initial code release goes to &lt;a href=&#34;http://wsong83.github.io/&#34;&gt;Wei
+Song&lt;/a&gt;, who&amp;rsquo;s been working tirelessly on the HDL
+implementation.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
+
