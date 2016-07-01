@@ -2,333 +2,333 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>http://www.lowrisc.org/</loc>
+    <loc>http://wallento.github.io/lowrisc-site/</loc>
     <lastmod>2016-05-16T12:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://www.lowrisc.org/docs/debug-v0.3/debugsession/</loc>
+    <loc>http://wallento.github.io/lowrisc-site/docs/debug-v0.3/debugsession/</loc>
     <lastmod>2016-05-16T12:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://www.lowrisc.org/docs/debug-v0.3/simulation/</loc>
+    <loc>http://wallento.github.io/lowrisc-site/docs/debug-v0.3/simulation/</loc>
     <lastmod>2016-05-16T12:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://www.lowrisc.org/docs/debug-v0.3/interface/</loc>
+    <loc>http://wallento.github.io/lowrisc-site/docs/debug-v0.3/interface/</loc>
     <lastmod>2016-05-16T12:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://www.lowrisc.org/docs/debug-v0.3/debugmodules/</loc>
+    <loc>http://wallento.github.io/lowrisc-site/docs/debug-v0.3/debugmodules/</loc>
     <lastmod>2016-05-16T12:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://www.lowrisc.org/docs/debug-v0.3/softwaremethodology/</loc>
+    <loc>http://wallento.github.io/lowrisc-site/docs/debug-v0.3/softwaremethodology/</loc>
     <lastmod>2016-05-16T12:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://www.lowrisc.org/docs/debug-v0.3/walkthrough/</loc>
+    <loc>http://wallento.github.io/lowrisc-site/docs/debug-v0.3/walkthrough/</loc>
     <lastmod>2016-05-16T12:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://www.lowrisc.org/docs/debug-v0.3/lowriscsetup/</loc>
+    <loc>http://wallento.github.io/lowrisc-site/docs/debug-v0.3/lowriscsetup/</loc>
     <lastmod>2016-05-16T12:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://www.lowrisc.org/docs/debug-v0.3/osdsoftware/</loc>
+    <loc>http://wallento.github.io/lowrisc-site/docs/debug-v0.3/osdsoftware/</loc>
     <lastmod>2016-05-16T12:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://www.lowrisc.org/docs/debug-v0.3/overview/</loc>
+    <loc>http://wallento.github.io/lowrisc-site/docs/debug-v0.3/overview/</loc>
     <lastmod>2016-05-16T12:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://www.lowrisc.org/docs/debug-v0.3/environment/</loc>
+    <loc>http://wallento.github.io/lowrisc-site/docs/debug-v0.3/environment/</loc>
     <lastmod>2016-05-16T12:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://www.lowrisc.org/docs/debug-v0.3/release/</loc>
+    <loc>http://wallento.github.io/lowrisc-site/docs/debug-v0.3/release/</loc>
     <lastmod>2016-05-16T12:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://www.lowrisc.org/docs/debug-v0.3/fpga/</loc>
+    <loc>http://wallento.github.io/lowrisc-site/docs/debug-v0.3/fpga/</loc>
     <lastmod>2016-05-16T12:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://www.lowrisc.org/docs/debug-v0.3/</loc>
+    <loc>http://wallento.github.io/lowrisc-site/docs/debug-v0.3/</loc>
     <lastmod>2016-05-16T12:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://www.lowrisc.org/blog/2016/03/apply-now-to-work-with-lowrisc-in-google-summer-of-code</loc>
+    <loc>http://wallento.github.io/lowrisc-site/blog/2016/03/apply-now-to-work-with-lowrisc-in-google-summer-of-code</loc>
     <lastmod>2016-03-20T20:35:57+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://www.lowrisc.org/docs/gsoc-2016-ideas/</loc>
+    <loc>http://wallento.github.io/lowrisc-site/docs/gsoc-2016-ideas/</loc>
     <lastmod>2016-02-19T13:12:36+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://www.lowrisc.org/docs/other/dpi/</loc>
+    <loc>http://wallento.github.io/lowrisc-site/docs/other/dpi/</loc>
     <lastmod>2016-01-15T12:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://www.lowrisc.org/blog/2016/01/third-risc-v-workshop-day-two</loc>
+    <loc>http://wallento.github.io/lowrisc-site/blog/2016/01/third-risc-v-workshop-day-two</loc>
     <lastmod>2016-01-06T17:05:57+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://www.lowrisc.org/blog/2016/01/third-risc-v-workshop-day-one</loc>
+    <loc>http://wallento.github.io/lowrisc-site/blog/2016/01/third-risc-v-workshop-day-one</loc>
     <lastmod>2016-01-05T17:35:57+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://www.lowrisc.org/blog/2015/12/untethered-lowrisc-release</loc>
+    <loc>http://wallento.github.io/lowrisc-site/blog/2015/12/untethered-lowrisc-release</loc>
     <lastmod>2015-12-18T10:30:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://www.lowrisc.org/docs/untether-v0.2/dev-env/</loc>
+    <loc>http://wallento.github.io/lowrisc-site/docs/untether-v0.2/dev-env/</loc>
     <lastmod>2015-12-17T17:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://www.lowrisc.org/docs/untether-v0.2/spike/</loc>
+    <loc>http://wallento.github.io/lowrisc-site/docs/untether-v0.2/spike/</loc>
     <lastmod>2015-12-17T17:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://www.lowrisc.org/docs/untether-v0.2/bootload/</loc>
+    <loc>http://wallento.github.io/lowrisc-site/docs/untether-v0.2/bootload/</loc>
     <lastmod>2015-12-17T17:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://www.lowrisc.org/docs/untether-v0.2/riscv_compile/</loc>
+    <loc>http://wallento.github.io/lowrisc-site/docs/untether-v0.2/riscv_compile/</loc>
     <lastmod>2015-12-17T17:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://www.lowrisc.org/docs/untether-v0.2/linux_compile/</loc>
+    <loc>http://wallento.github.io/lowrisc-site/docs/untether-v0.2/linux_compile/</loc>
     <lastmod>2015-12-17T17:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://www.lowrisc.org/docs/untether-v0.2/parameter/</loc>
+    <loc>http://wallento.github.io/lowrisc-site/docs/untether-v0.2/parameter/</loc>
     <lastmod>2015-12-17T17:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://www.lowrisc.org/docs/untether-v0.2/fpga-demo/</loc>
+    <loc>http://wallento.github.io/lowrisc-site/docs/untether-v0.2/fpga-demo/</loc>
     <lastmod>2015-12-17T17:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://www.lowrisc.org/docs/untether-v0.2/fpga-sim/</loc>
+    <loc>http://wallento.github.io/lowrisc-site/docs/untether-v0.2/fpga-sim/</loc>
     <lastmod>2015-12-17T17:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://www.lowrisc.org/docs/untether-v0.2/verilator/</loc>
+    <loc>http://wallento.github.io/lowrisc-site/docs/untether-v0.2/verilator/</loc>
     <lastmod>2015-12-17T17:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://www.lowrisc.org/docs/untether-v0.2/xilinx/</loc>
+    <loc>http://wallento.github.io/lowrisc-site/docs/untether-v0.2/xilinx/</loc>
     <lastmod>2015-12-17T17:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://www.lowrisc.org/docs/untether-v0.2/pcr/</loc>
+    <loc>http://wallento.github.io/lowrisc-site/docs/untether-v0.2/pcr/</loc>
     <lastmod>2015-12-17T17:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://www.lowrisc.org/docs/untether-v0.2/mmio/</loc>
+    <loc>http://wallento.github.io/lowrisc-site/docs/untether-v0.2/mmio/</loc>
     <lastmod>2015-12-17T17:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://www.lowrisc.org/docs/untether-v0.2/overview/</loc>
+    <loc>http://wallento.github.io/lowrisc-site/docs/untether-v0.2/overview/</loc>
     <lastmod>2015-12-17T17:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://www.lowrisc.org/docs/untether-v0.2/vsim/</loc>
+    <loc>http://wallento.github.io/lowrisc-site/docs/untether-v0.2/vsim/</loc>
     <lastmod>2015-12-17T17:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://www.lowrisc.org/docs/untether-v0.2/release/</loc>
+    <loc>http://wallento.github.io/lowrisc-site/docs/untether-v0.2/release/</loc>
     <lastmod>2015-12-17T17:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://www.lowrisc.org/docs/untether-v0.2/rocket-core/</loc>
+    <loc>http://wallento.github.io/lowrisc-site/docs/untether-v0.2/rocket-core/</loc>
     <lastmod>2015-12-17T17:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://www.lowrisc.org/docs/untether-v0.2/simulation/</loc>
+    <loc>http://wallento.github.io/lowrisc-site/docs/untether-v0.2/simulation/</loc>
     <lastmod>2015-12-17T17:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://www.lowrisc.org/docs/untether-v0.2/</loc>
+    <loc>http://wallento.github.io/lowrisc-site/docs/untether-v0.2/</loc>
     <lastmod>2015-12-17T17:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://www.lowrisc.org/blog/2015/08/lowrisc-at-orconf-2015</loc>
+    <loc>http://wallento.github.io/lowrisc-site/blog/2015/08/lowrisc-at-orconf-2015</loc>
     <lastmod>2015-08-16T10:51:14+01:00</lastmod>
   </url>
   
   <url>
-    <loc>http://www.lowrisc.org/blog/2015/06/second-risc-v-workshop-day-two</loc>
+    <loc>http://wallento.github.io/lowrisc-site/blog/2015/06/second-risc-v-workshop-day-two</loc>
     <lastmod>2015-06-30T17:00:45+01:00</lastmod>
   </url>
   
   <url>
-    <loc>http://www.lowrisc.org/blog/2015/06/second-risc-v-workshop-day-one</loc>
+    <loc>http://wallento.github.io/lowrisc-site/blog/2015/06/second-risc-v-workshop-day-one</loc>
     <lastmod>2015-06-29T17:02:57+01:00</lastmod>
   </url>
   
   <url>
-    <loc>http://www.lowrisc.org/blog/2015/05/summer-of-code-students-for-lowrisc</loc>
+    <loc>http://wallento.github.io/lowrisc-site/blog/2015/05/summer-of-code-students-for-lowrisc</loc>
     <lastmod>2015-05-13T20:45:07+01:00</lastmod>
   </url>
   
   <url>
-    <loc>http://www.lowrisc.org/docs/</loc>
+    <loc>http://wallento.github.io/lowrisc-site/docs/</loc>
     <lastmod>2015-04-14T13:26:41+01:00</lastmod>
   </url>
   
   <url>
-    <loc>http://www.lowrisc.org/blog/2015/04/lowrisc-tagged-memory-preview-release</loc>
+    <loc>http://wallento.github.io/lowrisc-site/blog/2015/04/lowrisc-tagged-memory-preview-release</loc>
     <lastmod>2015-04-13T22:28:10+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://www.lowrisc.org/docs/tagged-memory-v0.1/future/</loc>
+    <loc>http://wallento.github.io/lowrisc-site/docs/tagged-memory-v0.1/future/</loc>
     <lastmod>2015-04-13T14:27:08+01:00</lastmod>
   </url>
   
   <url>
-    <loc>http://www.lowrisc.org/docs/tagged-memory-v0.1/fpga-fesvr/</loc>
+    <loc>http://wallento.github.io/lowrisc-site/docs/tagged-memory-v0.1/fpga-fesvr/</loc>
     <lastmod>2015-04-12T16:24:16+01:00</lastmod>
   </url>
   
   <url>
-    <loc>http://www.lowrisc.org/docs/tagged-memory-v0.1/fpga-ramdisk/</loc>
+    <loc>http://wallento.github.io/lowrisc-site/docs/tagged-memory-v0.1/fpga-ramdisk/</loc>
     <lastmod>2015-04-12T16:22:20+01:00</lastmod>
   </url>
   
   <url>
-    <loc>http://www.lowrisc.org/docs/tagged-memory-v0.1/fpga-bootimage/</loc>
+    <loc>http://wallento.github.io/lowrisc-site/docs/tagged-memory-v0.1/fpga-bootimage/</loc>
     <lastmod>2015-04-12T16:19:10+01:00</lastmod>
   </url>
   
   <url>
-    <loc>http://www.lowrisc.org/docs/tagged-memory-v0.1/fpga/</loc>
+    <loc>http://wallento.github.io/lowrisc-site/docs/tagged-memory-v0.1/fpga/</loc>
     <lastmod>2015-04-12T15:52:33+01:00</lastmod>
   </url>
   
   <url>
-    <loc>http://www.lowrisc.org/docs/tagged-memory-v0.1/verilog-fpga-sim/</loc>
+    <loc>http://wallento.github.io/lowrisc-site/docs/tagged-memory-v0.1/verilog-fpga-sim/</loc>
     <lastmod>2015-04-12T15:51:05+01:00</lastmod>
   </url>
   
   <url>
-    <loc>http://www.lowrisc.org/docs/tagged-memory-v0.1/verilog-asic-sim/</loc>
+    <loc>http://wallento.github.io/lowrisc-site/docs/tagged-memory-v0.1/verilog-asic-sim/</loc>
     <lastmod>2015-04-12T15:47:34+01:00</lastmod>
   </url>
   
   <url>
-    <loc>http://www.lowrisc.org/docs/tagged-memory-v0.1/emulator/</loc>
+    <loc>http://wallento.github.io/lowrisc-site/docs/tagged-memory-v0.1/emulator/</loc>
     <lastmod>2015-04-12T15:44:04+01:00</lastmod>
   </url>
   
   <url>
-    <loc>http://www.lowrisc.org/docs/tagged-memory-v0.1/spike/</loc>
+    <loc>http://wallento.github.io/lowrisc-site/docs/tagged-memory-v0.1/spike/</loc>
     <lastmod>2015-04-12T15:42:11+01:00</lastmod>
   </url>
   
   <url>
-    <loc>http://www.lowrisc.org/docs/tagged-memory-v0.1/simulations/</loc>
+    <loc>http://wallento.github.io/lowrisc-site/docs/tagged-memory-v0.1/simulations/</loc>
     <lastmod>2015-04-12T15:39:40+01:00</lastmod>
   </url>
   
   <url>
-    <loc>http://www.lowrisc.org/docs/tagged-memory-v0.1/setup/</loc>
+    <loc>http://wallento.github.io/lowrisc-site/docs/tagged-memory-v0.1/setup/</loc>
     <lastmod>2015-04-12T15:35:46+01:00</lastmod>
   </url>
   
   <url>
-    <loc>http://www.lowrisc.org/docs/tagged-memory-v0.1/tag-tests/</loc>
+    <loc>http://wallento.github.io/lowrisc-site/docs/tagged-memory-v0.1/tag-tests/</loc>
     <lastmod>2015-04-12T15:33:14+01:00</lastmod>
   </url>
   
   <url>
-    <loc>http://www.lowrisc.org/docs/tagged-memory-v0.1/new-instructions/</loc>
+    <loc>http://wallento.github.io/lowrisc-site/docs/tagged-memory-v0.1/new-instructions/</loc>
     <lastmod>2015-04-12T15:28:01+01:00</lastmod>
   </url>
   
   <url>
-    <loc>http://www.lowrisc.org/docs/tagged-memory-v0.1/tags/</loc>
+    <loc>http://wallento.github.io/lowrisc-site/docs/tagged-memory-v0.1/tags/</loc>
     <lastmod>2015-04-12T15:16:58+01:00</lastmod>
   </url>
   
   <url>
-    <loc>http://www.lowrisc.org/docs/tagged-memory-v0.1/rocket-core/</loc>
+    <loc>http://wallento.github.io/lowrisc-site/docs/tagged-memory-v0.1/rocket-core/</loc>
     <lastmod>2015-04-12T15:12:50+01:00</lastmod>
   </url>
   
   <url>
-    <loc>http://www.lowrisc.org/docs/tagged-memory-v0.1/rocket-chip/</loc>
+    <loc>http://wallento.github.io/lowrisc-site/docs/tagged-memory-v0.1/rocket-chip/</loc>
     <lastmod>2015-04-12T15:05:25+01:00</lastmod>
   </url>
   
   <url>
-    <loc>http://www.lowrisc.org/docs/tagged-memory-v0.1/</loc>
+    <loc>http://wallento.github.io/lowrisc-site/docs/tagged-memory-v0.1/</loc>
     <lastmod>2015-04-12T14:18:41+01:00</lastmod>
   </url>
   
   <url>
-    <loc>http://www.lowrisc.org/community/</loc>
+    <loc>http://wallento.github.io/lowrisc-site/community/</loc>
     <lastmod>2015-04-11T16:37:31+01:00</lastmod>
   </url>
   
   <url>
-    <loc>http://www.lowrisc.org/about/</loc>
+    <loc>http://wallento.github.io/lowrisc-site/about/</loc>
     <lastmod>2015-03-23T13:40:22+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://www.lowrisc.org/docs/memo-2014-001-tagged-memory-and-minion-cores/</loc>
+    <loc>http://wallento.github.io/lowrisc-site/docs/memo-2014-001-tagged-memory-and-minion-cores/</loc>
     <lastmod>2015-03-23T13:25:48+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://www.lowrisc.org/docs/gsoc-2015-ideas/</loc>
+    <loc>http://wallento.github.io/lowrisc-site/docs/gsoc-2015-ideas/</loc>
     <lastmod>2015-03-23T13:12:36+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://www.lowrisc.org/faq/</loc>
+    <loc>http://wallento.github.io/lowrisc-site/faq/</loc>
     <lastmod>2015-03-23T11:45:42+00:00</lastmod>
   </url>
   

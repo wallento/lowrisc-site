@@ -2,26 +2,26 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Blogs on lowRISC</title>
-    <link>http://www.lowrisc.org/blog/</link>
+    <link>http://wallento.github.io/lowrisc-site/blog/</link>
     <description>Recent content in Blogs on lowRISC</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 20 Mar 2016 20:35:57 +0000</lastBuildDate>
-    <atom:link href="http://www.lowrisc.org/blog/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://wallento.github.io/lowrisc-site/blog/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Apply now to work with lowRISC in Google Summer of Code</title>
-      <link>http://www.lowrisc.org/blog/2016/03/apply-now-to-work-with-lowrisc-in-google-summer-of-code</link>
+      <link>http://wallento.github.io/lowrisc-site/blog/2016/03/apply-now-to-work-with-lowrisc-in-google-summer-of-code</link>
       <pubDate>Sun, 20 Mar 2016 20:35:57 +0000</pubDate>
       
-      <guid>http://www.lowrisc.org/blog/2016/03/apply-now-to-work-with-lowrisc-in-google-summer-of-code</guid>
+      <guid>http://wallento.github.io/lowrisc-site/blog/2016/03/apply-now-to-work-with-lowrisc-in-google-summer-of-code</guid>
       <description>&lt;p&gt;We are very grateful to have been selected to take part as a mentoring
 organisation in the &lt;a href=&#34;https://summerofcode.withgoogle.com/&#34;&gt;Google Summer of
 Code&lt;/a&gt; for the second year running. As
 with last year, we&amp;rsquo;re working with a number of friends from across the wider
 open source hardware community to act as an umbrella for a range of
 hardware-related projects. If you are a student who would like to be paid to
-work on open source during the summer, then take a look at &lt;a href=&#34;http://www.lowrisc.org/docs/gsoc-2016-ideas/&#34;&gt;the lowRISC ideas
+work on open source during the summer, then take a look at &lt;a href=&#34;http://wallento.github.io/lowrisc-site/docs/gsoc-2016-ideas/&#34;&gt;the lowRISC ideas
 list&lt;/a&gt; and
 &lt;a href=&#34;https://summerofcode.withgoogle.com/organizations/6271463900315648/&#34;&gt;apply&lt;/a&gt;.
 As was pointed out on the Google Open Source Program&amp;rsquo;s blog, there is a &lt;a href=&#34;http://google-opensource.blogspot.co.uk/2016/03/something-different-code-up-hardware-in.html&#34;&gt;good
@@ -29,7 +29,7 @@ showing from hardware-related projects in GSoC this
 year&lt;/a&gt;.
 The deadline for applications is this coming Friday, 25th March at 7pm GMT.&lt;/p&gt;
 
-&lt;p&gt;We welcome ideas of your own creation, but the &lt;a href=&#34;http://www.lowrisc.org/docs/gsoc-2016-ideas/&#34;&gt;ideas we&amp;rsquo;ve suggested this
+&lt;p&gt;We welcome ideas of your own creation, but the &lt;a href=&#34;http://wallento.github.io/lowrisc-site/docs/gsoc-2016-ideas/&#34;&gt;ideas we&amp;rsquo;ve suggested this
 year&lt;/a&gt; include:&lt;/p&gt;
 
 &lt;ul&gt;
@@ -53,10 +53,10 @@ open-source synthesis tool.&lt;/li&gt;
     
     <item>
       <title>Third RISC-V Workshop: Day Two</title>
-      <link>http://www.lowrisc.org/blog/2016/01/third-risc-v-workshop-day-two</link>
+      <link>http://wallento.github.io/lowrisc-site/blog/2016/01/third-risc-v-workshop-day-two</link>
       <pubDate>Wed, 06 Jan 2016 17:05:57 +0000</pubDate>
       
-      <guid>http://www.lowrisc.org/blog/2016/01/third-risc-v-workshop-day-two</guid>
+      <guid>http://wallento.github.io/lowrisc-site/blog/2016/01/third-risc-v-workshop-day-two</guid>
       <description>
 
 &lt;p&gt;Today is the second day of the &lt;a href=&#34;http://riscv.org/workshop-jan2016.html&#34;&gt;third RISC-V
@@ -411,10 +411,10 @@ previous work, have 10% area overhead and twice the area, 60% energy overhead.&l
     
     <item>
       <title>Third RISC-V Workshop: Day One</title>
-      <link>http://www.lowrisc.org/blog/2016/01/third-risc-v-workshop-day-one</link>
+      <link>http://wallento.github.io/lowrisc-site/blog/2016/01/third-risc-v-workshop-day-one</link>
       <pubDate>Tue, 05 Jan 2016 17:35:57 +0000</pubDate>
       
-      <guid>http://www.lowrisc.org/blog/2016/01/third-risc-v-workshop-day-one</guid>
+      <guid>http://wallento.github.io/lowrisc-site/blog/2016/01/third-risc-v-workshop-day-one</guid>
       <description>
 
 &lt;p&gt;The &lt;a href=&#34;http://riscv.org/workshop-jan2016.html&#34;&gt;third RISC-V workshop&lt;/a&gt; is going
@@ -723,16 +723,16 @@ Cortex-A Programmer&amp;rsquo;s Guide, and a New Contributor&amp;rsquo;s Guide.&
     
     <item>
       <title>Untethered lowRISC release</title>
-      <link>http://www.lowrisc.org/blog/2015/12/untethered-lowrisc-release</link>
+      <link>http://wallento.github.io/lowrisc-site/blog/2015/12/untethered-lowrisc-release</link>
       <pubDate>Fri, 18 Dec 2015 10:30:00 +0000</pubDate>
       
-      <guid>http://www.lowrisc.org/blog/2015/12/untethered-lowrisc-release</guid>
+      <guid>http://wallento.github.io/lowrisc-site/blog/2015/12/untethered-lowrisc-release</guid>
       <description>&lt;p&gt;Over the past several months, we&amp;rsquo;ve been working to provide a standalone or
 &amp;lsquo;untethered&amp;rsquo; SoC. Cores in the original &lt;a href=&#34;https://github.com/ucb-bar/rocket-chip&#34;&gt;Rocket
 chip&lt;/a&gt; rely on communicating with a
 companion processor via the host-target interface (HTIF) to access peripherals
 and I/O. This release removes this requirement, adding an I/O bus and
-instantiating FPGA peripherals. The accompanying &lt;a href=&#34;http://www.lowrisc.org/docs/untether-v0.2/&#34;&gt;tutorial&lt;/a&gt;, written by Wei Song, describes how to
+instantiating FPGA peripherals. The accompanying &lt;a href=&#34;http://wallento.github.io/lowrisc-site/docs/untether-v0.2/&#34;&gt;tutorial&lt;/a&gt;, written by Wei Song, describes how to
 build this code release and explains the underlying structural changes. We
 support both the &lt;a href=&#34;http://www.xilinx.com/products/boards-and-kits/ek-k7-kc705-g.html&#34;&gt;Xilinx
 KC705&lt;/a&gt; and
@@ -742,10 +742,10 @@ development boards. We would gladly welcome assistance in supporting other
 boards.&lt;/p&gt;
 
 &lt;p&gt;Please note that the codebase temporarily lacks support for tagged memory
-included in the &lt;a href=&#34;http://www.lowrisc.org/docs/tagged-memory-v0.1/&#34;&gt;previous release&lt;/a&gt;. We plan to re-integrate tagged memory support
+included in the &lt;a href=&#34;http://wallento.github.io/lowrisc-site/docs/tagged-memory-v0.1/&#34;&gt;previous release&lt;/a&gt;. We plan to re-integrate tagged memory support
 with additional optimisations early next year. You can find a detailed list of
-changes in the &lt;a href=&#34;http://www.lowrisc.org/docs/untether-v0.2/release/&#34;&gt;release notes&lt;/a&gt;.
-One highlight is support for &lt;a href=&#34;http://www.lowrisc.org/docs/untether-v0.2/vsim/&#34;&gt;RTL simulation using the open-source Verilator
+changes in the &lt;a href=&#34;http://wallento.github.io/lowrisc-site/docs/untether-v0.2/release/&#34;&gt;release notes&lt;/a&gt;.
+One highlight is support for &lt;a href=&#34;http://wallento.github.io/lowrisc-site/docs/untether-v0.2/vsim/&#34;&gt;RTL simulation using the open-source Verilator
 tool&lt;/a&gt;.&lt;/p&gt;
 
 &lt;p&gt;This development milestone should make it easier for others to contribute. If
@@ -778,10 +778,10 @@ and Alex Bradbury will be presenting about lowRISC.&lt;/p&gt;
     
     <item>
       <title>lowRISC at ORConf 2015</title>
-      <link>http://www.lowrisc.org/blog/2015/08/lowrisc-at-orconf-2015</link>
+      <link>http://wallento.github.io/lowrisc-site/blog/2015/08/lowrisc-at-orconf-2015</link>
       <pubDate>Sun, 16 Aug 2015 10:51:14 +0100</pubDate>
       
-      <guid>http://www.lowrisc.org/blog/2015/08/lowrisc-at-orconf-2015</guid>
+      <guid>http://wallento.github.io/lowrisc-site/blog/2015/08/lowrisc-at-orconf-2015</guid>
       <description>&lt;p&gt;Please join us October 9th-11th in Geneva, Switzerland for &lt;a href=&#34;http://openrisc.io/orconf/&#34;&gt;ORConf
 2015&lt;/a&gt;. The event is kindly being hosted by CERN at
 the &lt;a href=&#34;http://knowledgetransfer.web.cern.ch/ideasquare/about&#34;&gt;IdeaSquare&lt;/a&gt;.
@@ -808,10 +808,10 @@ here&lt;/a&gt;.&lt;/p&gt;
     
     <item>
       <title>Second RISC-V Workshop: Day Two</title>
-      <link>http://www.lowrisc.org/blog/2015/06/second-risc-v-workshop-day-two</link>
+      <link>http://wallento.github.io/lowrisc-site/blog/2015/06/second-risc-v-workshop-day-two</link>
       <pubDate>Tue, 30 Jun 2015 17:00:45 +0100</pubDate>
       
-      <guid>http://www.lowrisc.org/blog/2015/06/second-risc-v-workshop-day-two</guid>
+      <guid>http://wallento.github.io/lowrisc-site/blog/2015/06/second-risc-v-workshop-day-two</guid>
       <description>
 
 &lt;p&gt;It&amp;rsquo;s the second day of the &lt;a href=&#34;http://riscv.org/workshop-jun2015.html&#34;&gt;second RISC-V
@@ -1003,10 +1003,10 @@ website&lt;/a&gt;.&lt;/li&gt;
     
     <item>
       <title>Second RISC-V Workshop: Day One</title>
-      <link>http://www.lowrisc.org/blog/2015/06/second-risc-v-workshop-day-one</link>
+      <link>http://wallento.github.io/lowrisc-site/blog/2015/06/second-risc-v-workshop-day-one</link>
       <pubDate>Mon, 29 Jun 2015 17:02:57 +0100</pubDate>
       
-      <guid>http://www.lowrisc.org/blog/2015/06/second-risc-v-workshop-day-one</guid>
+      <guid>http://wallento.github.io/lowrisc-site/blog/2015/06/second-risc-v-workshop-day-one</guid>
       <description>
 
 &lt;p&gt;The &lt;a href=&#34;http://riscv.org/workshop-jun2015.html&#34;&gt;second RISC-V workshop&lt;/a&gt; is going
@@ -1238,10 +1238,10 @@ individual cache lines lockable.&lt;/li&gt;
     
     <item>
       <title>Summer of Code students for lowRISC</title>
-      <link>http://www.lowrisc.org/blog/2015/05/summer-of-code-students-for-lowrisc</link>
+      <link>http://wallento.github.io/lowrisc-site/blog/2015/05/summer-of-code-students-for-lowrisc</link>
       <pubDate>Wed, 13 May 2015 20:45:07 +0100</pubDate>
       
-      <guid>http://www.lowrisc.org/blog/2015/05/summer-of-code-students-for-lowrisc</guid>
+      <guid>http://wallento.github.io/lowrisc-site/blog/2015/05/summer-of-code-students-for-lowrisc</guid>
       <description>&lt;p&gt;lowRISC was fortunate enough to be chosen as a mentoring organisation in this
 year&amp;rsquo;s &lt;a href=&#34;https://developers.google.com/open-source/soc/&#34;&gt;Google Summer of
 Code&lt;/a&gt;. The Google Summer of
@@ -1370,17 +1370,17 @@ please do leave them in the comments.&lt;/p&gt;
     
     <item>
       <title>lowRISC tagged memory preview release</title>
-      <link>http://www.lowrisc.org/blog/2015/04/lowrisc-tagged-memory-preview-release</link>
+      <link>http://wallento.github.io/lowrisc-site/blog/2015/04/lowrisc-tagged-memory-preview-release</link>
       <pubDate>Mon, 13 Apr 2015 22:28:10 +0000</pubDate>
       
-      <guid>http://www.lowrisc.org/blog/2015/04/lowrisc-tagged-memory-preview-release</guid>
-      <description>&lt;p&gt;We&amp;rsquo;re pleased to announce the &lt;a href=&#34;http://www.lowrisc.org/docs/tagged-memory-v0.1/&#34;&gt;first lowRISC preview release&lt;/a&gt;, demonstrating support for tagged memory as
-described in &lt;a href=&#34;http://www.lowrisc.org/docs/memo-2014-001-tagged-memory-and-minion-cores/&#34;&gt;our memo&lt;/a&gt;. Our ambition with lowRISC is to provide an open-source System-on-Chip
+      <guid>http://wallento.github.io/lowrisc-site/blog/2015/04/lowrisc-tagged-memory-preview-release</guid>
+      <description>&lt;p&gt;We&amp;rsquo;re pleased to announce the &lt;a href=&#34;http://wallento.github.io/lowrisc-site/docs/tagged-memory-v0.1/&#34;&gt;first lowRISC preview release&lt;/a&gt;, demonstrating support for tagged memory as
+described in &lt;a href=&#34;http://wallento.github.io/lowrisc-site/docs/memo-2014-001-tagged-memory-and-minion-cores/&#34;&gt;our memo&lt;/a&gt;. Our ambition with lowRISC is to provide an open-source System-on-Chip
 platform for others to build on, along with low-cost development boards
 featuring a reference implementation. Although there&amp;rsquo;s more work to be done on
 the tagged memory implementation, now seemed a good time to document what
 we&amp;rsquo;ve done in order for the wider community to take a look. Please see our
-&lt;a href=&#34;http://www.lowrisc.org/docs/tagged-memory-v0.1/&#34;&gt;full tutorial&lt;/a&gt; which describes in some
+&lt;a href=&#34;http://wallento.github.io/lowrisc-site/docs/tagged-memory-v0.1/&#34;&gt;full tutorial&lt;/a&gt; which describes in some
 detail the changes we&amp;rsquo;ve made to the Berkeley &lt;a href=&#34;https://github.com/ucb-bar/rocket&#34;&gt;Rocket
 core&lt;/a&gt;, as well as how you can build and try
 it out for yourself (either in simulation, or on an FPGA). We&amp;rsquo;ve gone to some
