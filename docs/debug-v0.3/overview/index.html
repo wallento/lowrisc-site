@@ -98,7 +98,112 @@
                         
                     </header>
                     <section>
-                        
+                        <p>For this release we have set the goal to create the basic debug
+infrastructure for lowRISC. Before we go into the details, we want to
+give you an overview about where we are heading with the debug
+infrastructure. Essentially, there are two methods to debug a
+processor:</p>
+
+<ul>
+<li><p>With <em>run-control debugging</em> the developer controls the processor
+core by setting breakpoints and stepping through instruction. This
+is what most people understand as debugging and <code>gdb</code> is probably
+the dominant tool for it.</p></li>
+
+<li><p><em>Trace debugging</em> differs from that by sampling the processor
+execution (program counter etc.) and generating a &ldquo;trace&rdquo; of the
+program execution. Most importantly that happens non-intrusively,
+meaning there is no impact on the program execution. Especially for
+multicore system-on-chip that enables debugging of concurrency
+issues or performance bottlenecks. Finally, also other hardware
+elements like a DMA or memory controller can be easily extended to
+generate traces.</p></li>
+</ul>
+
+<p>While we have support for run-control debugging in the roadmap, we
+currently focus on trace debugging. So for our first release we have
+defined the following functionalities we want to support:</p>
+
+<ul>
+<li><p>Generate a function trace (enter and leave functions) for the
+program</p></li>
+
+<li><p>Allow minimally intrusive software instrumentation with trace
+events</p></li>
+
+<li><p>Memory access and initialization</p></li>
+
+<li><p>Reset the system and cores remotely</p></li>
+
+<li><p>Serial communication (console) via the debug system</p></li>
+</ul>
+
+<p>In the picture below you can find an updated overview of the lowRISC
+system architecture. If you compare it to the
+<a href="http://wallento.github.io/lowrisc-site/docs/untether-v0.2/overview/">previous SoC overview</a> you
+can see that the major change and main topic of this tutorial is the
+new debug infrastructure.</p>
+
+<p><a name="figure-overview"></a>
+<img src="../figures/lowRISC_soc.png" alt="Drawing" style="width: 600px; padding: 20px 0px;"/></p>
+
+<p>You can find the functionalities covered by modules throughout the
+system. For best scalability and modularity we decided to connect the
+debug modules with a separate network. Currently we use one debug ring
+as a compromise between throughput and resource utilization. The
+following figure focuses on the debug system.</p>
+
+<p><a name="figure-overview"></a>
+<img src="../figures/debug_system.png" alt="Drawing" style="width: 600px; padding: 20px 0px;"/></p>
+
+<p>The figure also shows the connection to the host PC that communicates
+with the debug modules with <em>debug packets</em>. The actual data transport
+between the host and the debug system is abstracted by using the
+<em>Generic Logic Interface Project (glip)</em> which provides a simple
+bi-directional FIFO interface and different physical interfaces like
+UART, USB and JTAG.</p>
+
+<p>We take out the work on the debug infrastructure as part of the
+<a href="http://www.opensocdebug.org">Open SoC Debug</a> project, where you can
+also find a
+<a href="http://opensocdebug.org/docs/overview/">broader introduction</a>. The
+debug infrastructure presented in this tutorial is just the first
+step. Before we jump into the details and get some hands-on
+experience, we want to briefly outline where the debug subsystem is
+headed:</p>
+
+<ul>
+<li><p>Once a <em>run-control interface</em> is available for the Rocket core we
+will include it as a debug module.</p></li>
+
+<li><p>Full system traces fastly blow up to multiple gigabyte per
+second. <em>(Cross-)Triggers and filters</em> help reducing the trace size
+and focus on the problem.</p></li>
+
+<li><p><em>On-chip trace processing</em> with a (dedicated) Minion core can be
+used to aggregate and process basic trace information to high level
+information (knowledge).</p></li>
+
+<li><p><em>Trace buffering and output</em> on a separate high speed port or to
+DRAM broadens the use cases of the debug system.</p></li>
+</ul>
+
+<p>Please <a href="http://wallento.github.io/lowrisc-site/community/">get in touch with us</a> if you want
+have ideas and opinions about future directions we should take. Now
+its time to learn more about the debug system or jump into using it:</p>
+
+<ul>
+<li><p>More details</p>
+
+<ul>
+<li><a href="http://wallento.github.io/lowrisc-site/docs/debug-v0.3/interface/">Debug interface</a></li>
+<li><a href="http://wallento.github.io/lowrisc-site/docs/debug-v0.3/debugmodules/">Debug modules</a></li>
+<li><a href="http://wallento.github.io/lowrisc-site/docs/debug-v0.3/softwaremethodology/">Debug software and methodology</a></li>
+</ul></li>
+
+<li><p><a href="http://wallento.github.io/lowrisc-site/docs/debug-v0.3/environment/">Prepare the environment and get started</a></p></li>
+</ul>
+
                     </section>
                 </article>
 
