@@ -104,6 +104,27 @@
 debug system will use the UART connection at 3 MBaud to communicate
 with the debug system.</p>
 
+<p>You have the choice to build the FPGA bitstream and Linux yourself or
+use the pre-builts provided by us.</p>
+
+<h2 id="option-1-pre-built-bitstream-and-linux-image:2b37e9ffd044e2f81b36b8d798aa8a19">Option 1: Pre-built bitstream and Linux image</h2>
+
+<p>You need two download two files:</p>
+
+<ul>
+<li><a href="https://github.com/lowRISC/lowrisc-chip/releases/download/v0.3/chip_top.bin">chip_top.bit</a>:
+FPGA bitstream</li>
+<li><a href="https://github.com/lowRISC/lowrisc-chip/releases/download/v0.3/boot.bin">boot.bin</a>:
+Linux, Busybox and bootloader packaged in one image.</li>
+</ul>
+
+<p>First, write the bitstream:</p>
+
+<pre><code>vivado -mode batch -source $TOP/fpga/common/script/program.tcl -tclargs &quot;xc7a100t_0&quot; chip_top.bit
+</code></pre>
+
+<h2 id="option-2-build-bitstream-and-linux-image:2b37e9ffd044e2f81b36b8d798aa8a19">Option 2: Build bitstream and Linux image</h2>
+
 <h3 id="generate-the-bitstream:2b37e9ffd044e2f81b36b8d798aa8a19">Generate the bitstream</h3>
 
 <p>To generate a bitstream change to the FPGA directory and use <code>make</code> to
@@ -126,7 +147,23 @@ download the bitstream to the FPGA:</p>
 
 <p>Done!</p>
 
-<h3 id="connect-daemon-and-run-a-debug-session:2b37e9ffd044e2f81b36b8d798aa8a19">Connect daemon and run a debug session</h3>
+<h3 id="build-linux:2b37e9ffd044e2f81b36b8d798aa8a19">Build Linux</h3>
+
+<pre><code>cd $TOP/riscv-tools
+curl https://www.kernel.org/pub/linux/kernel/v4.x/linux-4.1.25.tar.xz| tar -xJ
+curl -L http://busybox.net/downloads/busybox-1.21.1.tar.bz2| tar -xj
+cd linux-4.1.25
+git init
+git remote add origin https://github.com/lowrisc/riscv-linux.git
+git fetch
+git checkout -f -t origin/debug-v0.3
+
+# then actually just go to any directory
+$TOP/riscv-tools/make_root.sh
+# it will generate boot.bin and copy it there
+</code></pre>
+
+<h2 id="connect-daemon-and-run-a-debug-session:2b37e9ffd044e2f81b36b8d798aa8a19">Connect daemon and run a debug session</h2>
 
 <p>Now you can connect to the debug system similar to the simulation
 before. In one terminal start the debug daemon:</p>
@@ -157,22 +194,6 @@ System ID: dead
  [5]: STM
    version: 0000
 Wait for connection
-</code></pre>
-
-<h3 id="build-linux:2b37e9ffd044e2f81b36b8d798aa8a19">Build Linux</h3>
-
-<pre><code>cd $TOP/riscv-tools
-curl https://www.kernel.org/pub/linux/kernel/v4.x/linux-4.1.25.tar.xz| tar -xJ
-curl -L http://busybox.net/downloads/busybox-1.21.1.tar.bz2| tar -xj
-cd linux-4.1.25
-git init
-git remote add origin https://github.com/lowrisc/riscv-linux.git
-git fetch
-git checkout -f -t origin/debug-v0.3
-
-# then actually just go to any directory
-$TOP/riscv-tools/make_root.sh
-# it will generate boot.bin and copy it there
 </code></pre>
 
                     </section>
