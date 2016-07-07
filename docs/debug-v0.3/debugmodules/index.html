@@ -108,6 +108,20 @@ modules at <a href="http://opensocdebug.org">Open SoC Debug</a>.</p>
 
 <h2 id="basic-module-interface:6678bd0c1462a153f54fc674dbdff1d5">Basic Module Interface</h2>
 
+<p>Each module has to provide a control and status interface via
+addresses that are accessed with register access packets. There is a
+basic memory map that contains the following information to enable
+easy system enumeration and tool adjustment to different module
+versions. It includes the module type, a vendor:id pair and the
+version of the module.</p>
+
+<p>Beside that all modules that generate debug packets from events can be
+stalled remotely by writing to a certain address. This is necessary to
+mute trace modules or special modules as the UART adapter.</p>
+
+<p>Finally, each module can provide more control and status registers,
+e.g., the information about the memory layout, the reset control, etc.</p>
+
 <h2 id="debug-modules:6678bd0c1462a153f54fc674dbdff1d5">Debug Modules</h2>
 
 <h3 id="system-control-module-scm:6678bd0c1462a153f54fc674dbdff1d5">System Control Module (SCM)</h3>
