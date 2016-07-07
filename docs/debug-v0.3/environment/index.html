@@ -100,12 +100,8 @@
                     <section>
                         
 
-<p>The environment needed for this tutorial is mostly similar to the
-previous tutorial, so you basically can reuse most of the prepared
-tools.</p>
-
-<p>We still recommend you work with a 64-bit Ubuntu (14.04 or 16.04
-LTS). Everything except using the FPGA boars should also work
+<p>We still recommend you work with a 64-bit Ubuntu (14.04 LTS).
+Everything except using the FPGA boards should also work
 out-of-box in a virtual machine.</p>
 
 <p>For more details follow the
@@ -124,9 +120,9 @@ swig git
 <p>The code is hosted in the
 <a href="https://github.com/lowrisc/lowrisc-chip">lowRISC chip git repository</a>. All
 external repositories are fetched as submodules. You need to clone the
-proper branch (<code>debug</code>):</p>
+proper branch (<code>debug-v0.3</code>):</p>
 
-<pre><code>git clone -b debug https://github.com/lowrisc/lowrisc-chip.git
+<pre><code>git clone -b debug-v0.3 https://github.com/lowrisc/lowrisc-chip.git
 cd lowrisc-chip
 git submodule update --init --recursive
 </code></pre>
@@ -134,7 +130,7 @@ git submodule update --init --recursive
 <h3 id="structure-of-the-git-repository:1c6c8021bf90a0f894bf2ef30de55548">Structure of the git repository</h3>
 
 <p>The structure is similar to the one described
-<a href="/docs/untether-v0.2/dev-env/#structure-of-the-git-repository:332a00eb4e29c66523efb552bbd30a5d">here</a>. Essentially
+<a href="/docs/untether-v0.2/dev-env/#gitstruct">here</a>. Essentially
 one folder was added that contains the Open SoC Debug repositories:</p>
 
 <ul>
@@ -149,13 +145,19 @@ one folder was added that contains the Open SoC Debug repositories:</p>
 
 <h3 id="next-steps:1c6c8021bf90a0f894bf2ef30de55548">Next steps</h3>
 
-<p>For the build and each time you need to set the environment variable
-<code>$TOP</code> to the <code>lowrisc-chip</code> base folder. You then need to set your
-environment with the script <code>set_env.sh</code> (formerly
-<code>set_riscv_env.sh</code>). In the base directory:</p>
+<p>To set the correct environment variables for running lowRISC, you need to
+source the script <code>set_env.sh</code> (formerly <code>set_riscv_env.sh</code>) in the base directory:</p>
 
-<pre><code>export TOP=`pwd`
-source set_env.sh
+<pre><code>source set_env.sh
+</code></pre>
+
+<p>It is possible to override the default values by exporting variables before sourcing the script.
+The following variables are overridable:</p>
+
+<pre><code>$TOP                Path to the lowrisc-chip directory ($PWD).
+$RISCV              Path to the riscv toolchain ($TOP/riscv).
+$OSD_ROOT           Path to the Open SoC Debug tools ($TOP/tools).
+$FPGA_BOARD         The tager FPGA board (nexys4_ddr).
 </code></pre>
 
 <p>Next, you should follow the following steps:</p>

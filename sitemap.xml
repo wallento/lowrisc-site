@@ -3,8 +3,28 @@
   
   <url>
     <loc>http://wallento.github.io/lowrisc-site/</loc>
-    <lastmod>2016-05-16T12:00:00+00:00</lastmod>
+    <lastmod>2016-07-08T12:00:00+00:00</lastmod>
     <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://wallento.github.io/lowrisc-site/docs/debug-v0.3/</loc>
+    <lastmod>2016-07-08T12:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://wallento.github.io/lowrisc-site/blog/2016/06/announcing-the-librecores-design-contest-and-orconf-2016</loc>
+    <lastmod>2016-06-28T15:39:34+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://wallento.github.io/lowrisc-site/docs/untether-v0.2/linux_compile/</loc>
+    <lastmod>2016-06-10T16:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://wallento.github.io/lowrisc-site/blog/2016/06/lowriscs-2016-google-summer-of-code-students</loc>
+    <lastmod>2016-06-03T12:12:49+01:00</lastmod>
   </url>
   
   <url>
@@ -68,11 +88,6 @@
   </url>
   
   <url>
-    <loc>http://wallento.github.io/lowrisc-site/docs/debug-v0.3/</loc>
-    <lastmod>2016-05-16T12:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>http://wallento.github.io/lowrisc-site/blog/2016/03/apply-now-to-work-with-lowrisc-in-google-summer-of-code</loc>
     <lastmod>2016-03-20T20:35:57+00:00</lastmod>
   </url>
@@ -119,11 +134,6 @@
   
   <url>
     <loc>http://wallento.github.io/lowrisc-site/docs/untether-v0.2/riscv_compile/</loc>
-    <lastmod>2015-12-17T17:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://wallento.github.io/lowrisc-site/docs/untether-v0.2/linux_compile/</loc>
     <lastmod>2015-12-17T17:00:00+00:00</lastmod>
   </url>
   

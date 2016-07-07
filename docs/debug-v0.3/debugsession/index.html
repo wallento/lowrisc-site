@@ -106,7 +106,7 @@ learn the different basic features to interact with the system.</p>
 
 <p>Before you begin, you should be example programs:</p>
 
-<pre><code>make -C ${TOP}/fpga/board/nexys4/examples hello.hex trace.hex
+<pre><code>FPGA_DIR=$TOP/vsim make -C $TOP/fpga/bare_metal/examples hello.riscv trace.riscv
 </code></pre>
 
 <h3 id="resetting-the-system:f87265c0cc81de64e78ce35c1598ac70">Resetting the system</h3>
@@ -121,7 +121,7 @@ what you learned before:</p>
 <ul>
 <li><p>Start simulation with preloaded software (terminal 1):</p>
 
-<pre><code>${TOP}/vsim/DebugConfig-sim +load=${TOP}/fpga/board/nexys4/examples/hello.hex
+<pre><code>$TOP/vsim/DebugConfig-sim +load=$TOP/fpga/bare_metal/examples/hello.riscv
 </code></pre></li>
 
 <li><p>Connect the daemon (terminal 2):</p>
@@ -147,7 +147,7 @@ osd&gt; quit
 with vcd output (add <code>+vcd</code> to the parameters) you can see how it is
 reset. <code>reset</code> actually controls the CPU and a different system
 reset. With the parameter <code>-halt</code> you can keep the CPU reset asserted
-to kepp the CPUs inactive while you load a program to the memory or
+and inactive while you load a program to the memory or
 configure the debug modules. Running <code>start</code> de-asserts the CPU reset
 then:</p>
 
@@ -165,7 +165,7 @@ emulation module that has the same physical interface, but transports
 the characters over the debug infrastructure.</p>
 
 <p>In the command line you can start a terminal that displays the output
-by executing <code>terminal &lt;moduleid&gt;</code>. You need to set the module id as
+by executing <code>terminal &lt;module id&gt;</code>. You need to set the module id as
 enumerated (here: <code>2</code>). This will open an <code>xterm</code> and direct output to
 it.</p>
 
@@ -195,7 +195,7 @@ giving the ELF currently executed on the core.</p>
 
 <pre><code>osd&gt; reset -halt
 osd&gt; terminal 2
-osd&gt; ctm log ctm.log /full/path/to/lowrisc-chip/fpga/boards/examples/hello.riscv
+osd&gt; ctm log ctm.log path/to/hello.riscv
 osd&gt; start
 osd&gt; quit
 </code></pre>
@@ -263,7 +263,7 @@ without stalling the system.</p>
 <p>The code <code>trace.c</code> from the examples emits four of such events. You
 need to load it with the simulation:</p>
 
-<pre><code>${TOP}/vsim/DebugConfig-sim +load=${TOP}/fpga/board/nexys4/examples/trace.hex
+<pre><code>$TOP/vsim/DebugConfig-sim +load=$TOP/fpga/bare_metal/examples/trace.riscv
 </code></pre>
 
 <p>Then</p>

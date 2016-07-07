@@ -5,7 +5,7 @@
         <meta http-equiv="content-type" content="text/html; charset=utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1" />
 
-        <title>Building the front-end server &middot; lowRISC</title>
+        <title>lowRISC&#39;s 2016 Google Summer of Code Students &middot; lowRISC</title>
         <link rel='stylesheet' href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600' type='text/css'>
         <link rel="stylesheet" href="http://wallento.github.io/lowrisc-site/libraries/normalize.3.0.1.css" />
         <link rel="stylesheet" href="http://wallento.github.io/lowrisc-site/css/liquorice.css" />
@@ -83,12 +83,8 @@
             <div class="sixteen columns">
                 <article class="li-article">
                 
-                  <p>
-                    <a href="http://wallento.github.io/lowrisc-site/docs/tagged-memory-v0.1/">⇡ lowRISC tagged memory tutorial</a>
-                  </p>
-                
                     <header class="li-article-header">
-                        <h1 class="li-article-title">Building the front-end server</h1>
+                        <h1 class="li-article-title">lowRISC&#39;s 2016 Google Summer of Code Students</h1>
                         <span class="li-article-taxonomies">
                             
 
@@ -96,77 +92,43 @@
                         </span>
                         
                         
+                        <time class="li-article-date">Friday, June 3, 2016</time>
+                        
                     </header>
                     <section>
-                        <p>The front-end server runs on the ARM side (PS) of the Zynq. It must
-be cross-compiled against the Xilinx SDK.</p>
+                        <p>The 2016 Google Summer of Code is now
+<a href="https://developers.google.com/open-source/gsoc/timeline">underway</a> and we&rsquo;re
+delighted to be working with five students, covering a variety of interesting
+projects. They have all introduced themselves over the past few weeks on <a href="https://listmaster.pepperfish.net/cgi-bin/mailman/listinfo/lowrisc-dev-lists.lowrisc.org">our
+project mailing
+list</a>.
+Many thanks to everyone who applied, to the mentors who volunteered, and to
+Google for sponsoring this programme. If your application was unsuccessful, I
+hope you&rsquo;ll try again next year.</p>
 
-<p>To compile your own front-end server:</p>
+<p>The <a href="https://summerofcode.withgoogle.com/organizations/6271463900315648/">projects for lowRISC in the 2016
+GSoC</a>
+are:</p>
 
-<pre><code># set up the RISCV environment variables
-# set up the Xilinx environment variables
-cd $TOP/riscv-tools/riscv-fesvr
-mkdir build_fpga
-cd build_fpga
-../configure --host=arm-xilinx-linux-gnueabi
-make -j$(nproc)
-</code></pre>
-
-<p>Once compilation has completed, you should find the following files:</p>
-
-<pre><code>ls -l fesvr-zedboard
-ls -l libfesvr.so
-</code></pre>
-
-<p>To copy your new front-end server to the FPGA image:</p>
-
-<pre><code>cd $TOP/fpga-zynq/zedboard
-make ramdisk-open
-sudo cp $TOP/riscv-tools/riscv-fesvr/build_fpga/fesvr-zedboard \
-  ramdisk/home/root/fesvr-zynq
-sudo cp $TOP/riscv-tools/riscv-fesvr/build_fpga/libfesvr.so \
-  ramdisk/usr/local/lib/libfesvr.so
-make ramdisk-close
-sudo rm -fr ramdisk
-</code></pre>
-
-<p>The proxy kernel (pk) used by the FPGA is the same one used in
-simulation.  While not normally necessary, the proxy kernel can be recompiled using the following commands:</p>
-
-<pre><code>cd $TOP/fpga-zynq/zedboard
-make ramdisk-open
-sudo cp $TOP/riscv-tools/riscv-pk/build/pk ramdisk/home/root/pk
-make ramdisk-close
-sudo \rm -fr ramdisk
-</code></pre>
+<ul>
+<li>Porting the Arduino library to RISC-V (PULPino). Mahmoud Elmohr, mentored by
+Andreas Traber</li>
+<li>Implementing an open-source DDRx controller. Bittu N, mentored by Wei Song</li>
+<li>Porting Musl libc to RISC-V. Masanori Ogino, mentored by Rich Felker. See
+Masanori&rsquo;s <a href="http://article.gmane.org/gmane.comp.hardware.lowrisc.devel/377">first status
+update</a></li>
+<li>Porting the OP-TEE Trusted Execution Environment to the lowRISC
+platform.Rahul S Mahadev, mentored by Stefan Wallentowitz. See <a href="http://mahadevrahul.blogspot.co.uk/2016/05/trusted-execution-environment-on-sel4.html">Rahul&rsquo;s blog
+post</a>
+on starting this project.</li>
+<li>Porting the xv6 teaching operating system to the lowRISC platform. Jeff
+Rogers, mentored by Alex Bradbury</li>
+</ul>
 
                     </section>
                 </article>
 
         </div>
-    </div>
-    
-    <div class="row li-pagination">
-      <div class="eight columns">
-        <div class="li-pagination-previous">
-          &nbsp;
-          
-          Previous<br />
-          &nbsp;
-          <a href="http://wallento.github.io/lowrisc-site/docs/tagged-memory-v0.1/fpga-ramdisk/"> Modifying the contents of the RAMdisk</a>
-          
-        </div>
-      </div>
-      <div class="eight columns">
-        <div class="li-pagination-next">
-          &nbsp;
-          
-          Next<br />
-          &nbsp;
-          <a href="http://wallento.github.io/lowrisc-site/docs/tagged-memory-v0.1/"> lowRISC tagged memory tutorial</a>
-          
-        </div>
-      </div>
     </div>
     
 
@@ -177,9 +139,9 @@ sudo \rm -fr ramdisk
             <script type="text/javascript">
                  
                 var disqus_shortname = 'lowrisc'; 
-                var disqus_identifier = "/" + "lowrisc-site/docs/tagged-memory-v0.1/fpga-fesvr";
-                var disqus_title = "Building the front-end server";
-                var disqus_url = "http://www.lowrisc.org" + "lowrisc-site/docs/tagged-memory-v0.1/fpga-fesvr";
+                var disqus_identifier = "/" + "lowrisc-site/blog/2016/06/lowriscs-2016-google-summer-of-code-students";
+                var disqus_title = "lowRISC\\'s 2016 Google Summer of Code Students";
+                var disqus_url = "http://www.lowrisc.org" + "lowrisc-site/blog/2016/06/lowriscs-2016-google-summer-of-code-students";
 
                  
                 (function() {

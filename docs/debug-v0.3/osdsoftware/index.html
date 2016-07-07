@@ -108,10 +108,10 @@ it only involves a few steps.</p>
 <p>First you need to build and install the glip software to connect to
 the FPGA or simulation.</p>
 
-<pre><code>cd ${TOP}/opensocdebug/glip
+<pre><code>cd $TOP/opensocdebug/glip
 ./autogen.sh
 mkdir build; cd build
-../configure --prefix=${TOP}/tools
+../configure --prefix=$OSD_ROOT --enable-tcp --enable-uart
 make &amp;&amp; make install
 </code></pre>
 
@@ -121,10 +121,10 @@ make &amp;&amp; make install
 out the python bindings, but you will loose a very convenient way to
 interact with the debug system.</p>
 
-<pre><code>cd ${TOP}/opensocdebug/software
+<pre><code>cd $TOP/opensocdebug/software
 ./autogen.sh
 mkdir build; cd build
-../configure --prefix=${TOP}/tools --enable-python-bindings
+../configure --prefix=$OSD_ROOT --enable-python-bindings
 make &amp;&amp; make install
 </code></pre>
 

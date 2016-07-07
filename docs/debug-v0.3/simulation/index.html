@@ -106,7 +106,7 @@
 cycle accuracy. You can generate the sources and build the simulation
 using:</p>
 
-<pre><code>make -C ${TOP}/vsim
+<pre><code>CONFIG=DebugConfig make -C $TOP/vsim sim
 </code></pre>
 
 <p>The build will take a few minutes.</p>
@@ -115,7 +115,7 @@ using:</p>
 
 <p>Next you can launch the RTL simulation:</p>
 
-<pre><code>${TOP}/vsim/DebugConfig-sim
+<pre><code>$TOP/vsim/DebugConfig-sim
 </code></pre>
 
 <p>You will see the following output:</p>
@@ -125,13 +125,20 @@ using:</p>
 
 <p>The simulation waits for the Open SoC Debug software to connect.</p>
 
-<p>You may want to debug the system with a waveform (vcd), which you can
-get by adding the <code>+vcd</code> parameter.</p>
+<p>You may want to debug the system with a waveform (vcd), which you need to
+compile a debug simulator and add the <code>+vcd</code> parameters.</p>
 
-<pre><code>${TOP}/vsim/DebugConfig-sim
+<pre><code># compile a debug simulator
+CONFIG=DebugConfig make -C $TOP/vsim sim-debug
+# run simulation
+$TOP/vsim/DebugConfig-sim-debug +vcd +vcd_name=sim.vcd
 </code></pre>
 
-<p>The vcd will only be logged while a debug tool is connected.</p>
+<p>The debugger allows you to load a program at run-time but you may want to
+pre-load a program using the <code>+load</code> parameter.</p>
+
+<pre><code>$TOP/vsim/DebugConfig-sim +load=prorgam
+</code></pre>
 
 <h3 id="connect-the-debug-daemon:1309ac1f454c83e64e4e39116137b6b5">Connect the debug daemon</h3>
 

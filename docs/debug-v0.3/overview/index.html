@@ -106,7 +106,7 @@ processor:</p>
 
 <ul>
 <li><p>With <em>run-control debugging</em> the developer controls the processor
-core by setting breakpoints and stepping through instruction. This
+core by setting breakpoints and stepping through instructions. This
 is what most people understand as debugging and <code>gdb</code> is probably
 the dominant tool for it.</p></li>
 
@@ -153,7 +153,7 @@ debug modules with a separate network. Currently we use one debug ring
 as a compromise between throughput and resource utilization. The
 following figure focuses on the debug system.</p>
 
-<p><a name="figure-overview"></a>
+<p><a name="figure-debugsystem"></a>
 <img src="../figures/debug_system.png" alt="Drawing" style="width: 600px; padding: 20px 0px;"/></p>
 
 <p>The figure also shows the connection to the host PC that communicates
@@ -180,7 +180,7 @@ will include it as a debug module.</p></li>
 second. <em>(Cross-)Triggers and filters</em> help reducing the trace size
 and focus on the problem.</p></li>
 
-<li><p><em>On-chip trace processing</em> with a (dedicated) Minion core can be
+<li><p><em>On-chip trace processing</em> with a (dedicated) minion core can be
 used to aggregate and process basic trace information to high level
 information (knowledge).</p></li>
 
