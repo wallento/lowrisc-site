@@ -118,9 +118,11 @@ FPGA bitstream</li>
 Linux, Busybox and bootloader packaged in one image.</li>
 </ul>
 
-<p>First, write the bitstream:</p>
+<p>Download and write the bitstream:</p>
 
-<pre><code>vivado -mode batch -source $TOP/fpga/common/script/program.tcl -tclargs &quot;xc7a100t_0&quot; chip_top.bit
+<pre><code>curl -L https://github.com/lowRISC/lowrisc-chip/releases/download/v0.3/chip_top.bit &gt; chip_top.bit
+curl -L https://github.com/lowRISC/lowrisc-chip/releases/download/v0.3/boot.bin &gt; boot.bin
+vivado -mode batch -source $TOP/fpga/common/script/program.tcl -tclargs &quot;xc7a100t_0&quot; chip_top.bit
 </code></pre>
 
 <h2 id="option-2-build-bitstream-and-linux-image:2b37e9ffd044e2f81b36b8d798aa8a19">Option 2: Build bitstream and Linux image</h2>
