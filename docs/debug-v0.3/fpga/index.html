@@ -133,8 +133,8 @@ system using the debug daemon:</p>
 <p>Then connect with the CLI in another terminal and boot Linux:</p>
 
 <pre><code>osd-cli
-&gt; terminal 2
-&gt; reset
+osd&gt; terminal 2
+osd&gt; reset
 </code></pre>
 
 <p>Now Linux should boot and you can interact with the terminal! In case
@@ -158,10 +158,10 @@ vivado -mode batch -source $TOP/fpga/common/script/program.tcl -tclargs &quot;xc
 <p>Now you can connect the daemon again and load the binary from the CLI:</p>
 
 <pre><code>osd-cli
-&gt; reset -halt
-&gt; terminal 2
-&gt; mem loadelf boot.bin 3
-&gt; start
+osd&gt; reset -halt
+osd&gt; terminal 2
+osd&gt; mem loadelf boot.bin 3
+osd&gt; start
 </code></pre>
 
 <p>The terminal should again boot Linux. To update the image simply
@@ -249,7 +249,7 @@ that bootloader.</p>
           
           Next<br />
           &nbsp;
-          <a href="http://wallento.github.io/lowrisc-site/docs/debug-v0.3/release/"> Release notes</a>
+          <a href="http://wallento.github.io/lowrisc-site/docs/debug-v0.3/soc_struct/"> Soc structure updates</a>
           
         </div>
       </div>

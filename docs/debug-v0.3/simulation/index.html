@@ -113,9 +113,10 @@ using:</p>
 
 <h3 id="start-the-rtl-simulation:1309ac1f454c83e64e4e39116137b6b5">Start the RTL simulation</h3>
 
-<p>Next you can launch the RTL simulation:</p>
+<p>Next you can launch the RTL simulation and wait for the debug tool to
+connect:</p>
 
-<pre><code>$TOP/vsim/DebugConfig-sim
+<pre><code>$TOP/vsim/DebugConfig-sim +waitdebug
 </code></pre>
 
 <p>You will see the following output:</p>
@@ -137,7 +138,7 @@ $TOP/vsim/DebugConfig-sim-debug +vcd +vcd_name=sim.vcd
 <p>The debugger allows you to load a program at run-time but you may want to
 pre-load a program using the <code>+load</code> parameter.</p>
 
-<pre><code>$TOP/vsim/DebugConfig-sim +load=prorgam
+<pre><code>$TOP/vsim/DebugConfig-sim +load=program
 </code></pre>
 
 <h3 id="connect-the-debug-daemon:1309ac1f454c83e64e4e39116137b6b5">Connect the debug daemon</h3>
@@ -165,7 +166,8 @@ System ID: dead
    version: 0000
    data width: 16, address width: 32
    number of regions: 1
-     [0] base address: 0x0000000000000000, memory size: 1073741824 Bytes
+     [0] base address: 0x0000000000000000, memory size: 65536 Bytes
+     [1] base address: 0x0000000040000000, memory size: 134217728 Bytes
  [4]: CTM
    version: 0000
  [5]: STM
@@ -179,7 +181,8 @@ Memory Access Module (MAM) extra information is available, namely the
 data and address width and the available memory regions. Thats all the
 daemon does, it then waits for a tool to connect.</p>
 
-<p>On the first terminal (simulation) you can see that the daemon has connected:</p>
+<p>On the first terminal (simulation) you can see that the daemon has
+connected:</p>
 
 <pre><code>Client connected
 </code></pre>
